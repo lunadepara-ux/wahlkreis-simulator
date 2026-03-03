@@ -3,13 +3,13 @@ let simulatedData = null;
 let trendActive = false;
 
 const TOTAL_SEATS = 630;
-const DIRECT_SEATS = 299;
-const LIST_SEATS = 331;
+const MAJORITY = 316;
 
 const colorMap = {
   "SPD": "#e3000f",
   "CDU": "#151518",
   "CSU": "#0570C9",
+  "Union": "#151518",
   "GRÜNE": "#409a3c",
   "FDP": "#ffed00",
   "AfD": "#00a2de",
@@ -17,17 +17,6 @@ const colorMap = {
   "BSW": "#792351",
   "SSW": "#003366",
   "Volt": "#582c83"
-};
-
-const originalNational = {
-  "CDU": 22.5,
-  "CSU": 6.0,
-  "AfD": 20.8,
-  "SPD": 16.4,
-  "GRÜNE": 13.9,
-  "Die Linke": 8.6,
-  "FDP": 4.3,
-  "BSW": 5.0
 };
 
 async function loadMap() {
@@ -51,13 +40,9 @@ function assignWahlkreisIDs() {
   paths.forEach((path, index) => {
 
     const wkNr = (index + 1).toString();
-    path.setAttribute("id", "WK_" + wkNr);
-
     if (!data[wkNr]) return;
 
-    const winner = data[wkNr].winner;
-    path.style.fill = colorMap[winner] || "#ccc";
-    path.setAttribute("fill-opacity", "1");
+    path.style.fill = colorMap[data[wkNr].winner] || "#ccc";
 
     path.addEventListener("mousemove", (e) => {
 
@@ -82,19 +67,31 @@ function assignWahlkreisIDs() {
     path.addEventListener("mouseleave", () => {
       tooltip.style.display = "none";
     });
-
   });
 }
 
-function applyNationalTrend(newNational) {
+function applyCustomInput() {
+
+  const nationalResult = {
+    "CDU": parseFloat(CDU_input.value) || 0,
+    "CSU": parseFloat(CSU_input.value) || 0,
+    "AfD": parseFloat(AfD_input.value) || 0,
+    "SPD": parseFloat(SPD_input.value) || 0,
+    "GRÜNE": parseFloat(GRUENE_input.value) || 0,
+    "Die Linke": parseFloat(LINKE_input.value) || 0,
+    "FDP": parseFloat(FDP_input.value) || 0,
+    "BSW": parseFloat(BSW_input.value) || 0
+  };
+
+  simulateMap(nationalResult);
+  calculateSeats(nationalResult);
+
+  trendActive = true;
+}
+
+function simulateMap(nationalResult) {
 
   simulatedData = {};
-  let swing = {};
-
-  Object.keys(newNational).forEach(party => {
-    swing[party] = newNational[party] - (originalNational[party] || 0);
-  });
-
   const paths = document.querySelectorAll("path");
 
   paths.forEach((path, index) => {
@@ -102,71 +99,19 @@ function applyNationalTrend(newNational) {
     const wkNr = (index + 1).toString();
     if (!data[wkNr]) return;
 
-    const original = data[wkNr].values;
-    let simulated = {};
-
-    Object.keys(original).forEach(party => {
-      simulated[party] = original[party] + (swing[party] || 0);
+    let values = {};
+    Object.keys(data[wkNr].values).forEach(party => {
+      values[party] = nationalResult[party] || 0;
     });
 
-    simulatedData[wkNr] = simulated;
+    simulatedData[wkNr] = values;
 
-    let winner = Object.keys(simulated).reduce((a,b) =>
-      simulated[a] > simulated[b] ? a : b
+    let winner = Object.keys(values).reduce((a,b) =>
+      values[a] > values[b] ? a : b
     );
 
     path.style.fill = colorMap[winner] || "#ccc";
-    path.setAttribute("fill-opacity", "1");
   });
-}
-
-function toggleTrend() {
-
-  const button = document.getElementById("trendButton");
-
-  if (!trendActive) {
-
-    applyNationalTrend(originalNational);
-
-    trendActive = true;
-    button.innerText = "Trend AUS";
-
-  } else {
-
-    const paths = document.querySelectorAll("path");
-
-    paths.forEach((path, index) => {
-      const wkNr = (index + 1).toString();
-      if (!data[wkNr]) return;
-
-      const winner = data[wkNr].winner;
-      path.style.fill = colorMap[winner] || "#ccc";
-    });
-
-    trendActive = false;
-    simulatedData = null;
-    button.innerText = "Trend AN";
-  }
-}
-
-function applyCustomInput() {
-
-  const newNational = {
-    "CDU": parseFloat(document.getElementById("CDU_input").value) || 0,
-    "CSU": parseFloat(document.getElementById("CSU_input").value) || 0,
-    "AfD": parseFloat(document.getElementById("AfD_input").value) || 0,
-    "SPD": parseFloat(document.getElementById("SPD_input").value) || 0,
-    "GRÜNE": parseFloat(document.getElementById("GRUENE_input").value) || 0,
-    "Die Linke": parseFloat(document.getElementById("LINKE_input").value) || 0,
-    "FDP": parseFloat(document.getElementById("FDP_input").value) || 0,
-    "BSW": parseFloat(document.getElementById("BSW_input").value) || 0
-  };
-
-  applyNationalTrend(newNational);
-  calculateSeats(newNational);
-
-  trendActive = true;
-  document.getElementById("trendButton").innerText = "Trend AUS";
 }
 
 function calculateSeats(nationalResult) {
@@ -186,13 +131,18 @@ function calculateSeats(nationalResult) {
       values[a] > values[b] ? a : b
     );
 
-    directMandates[winner] = (directMandates[winner] || 0) + 1;
+    directMandates[winner] =
+      (directMandates[winner] || 0) + 1;
   });
 
-  // 5%-Hürde
   let validParties = {};
+
   Object.keys(nationalResult).forEach(party => {
-    if (nationalResult[party] >= 5) {
+
+    if (
+      nationalResult[party] >= 5 ||
+      (directMandates[party] || 0) >= 3
+    ) {
       validParties[party] = nationalResult[party];
     }
   });
@@ -201,22 +151,28 @@ function calculateSeats(nationalResult) {
     .reduce((a,b) => a + b, 0);
 
   Object.keys(validParties).forEach(party => {
-    validParties[party] = validParties[party] / totalPercent;
+    validParties[party] =
+      validParties[party] / totalPercent;
   });
 
   let seats = {};
 
   Object.keys(validParties).forEach(party => {
     seats[party] =
-      Math.round(validParties[party] * LIST_SEATS);
+      Math.round(validParties[party] * TOTAL_SEATS);
   });
 
-  Object.keys(directMandates).forEach(party => {
-    seats[party] =
-      (seats[party] || 0) + directMandates[party];
-  });
+  // 🔹 CDU + CSU → Union
+  if (seats["CDU"] || seats["CSU"]) {
+    seats["Union"] =
+      (seats["CDU"] || 0) + (seats["CSU"] || 0);
+    delete seats["CDU"];
+    delete seats["CSU"];
+  }
 
   displaySeatResult(seats);
+  drawParliament(seats);
+  buildCoalitionCalculator(seats);
 }
 
 function displaySeatResult(seats) {
@@ -225,16 +181,93 @@ function displaySeatResult(seats) {
 
   Object.entries(seats)
     .sort((a,b) => b[1] - a[1])
-    .forEach(([party, seatCount]) => {
+    .forEach(([party, count]) => {
 
-      const color = colorMap[party] || "#999";
-
-      html += `<div style="color:${color}; font-weight:bold;">
-                 ${party}: ${seatCount} Sitze
+      html += `<div style="color:${colorMap[party] || "#999"}; font-weight:bold;">
+                 ${party}: ${count} Sitze
                </div>`;
     });
 
-  document.getElementById("seatResult").innerHTML = html;
+  seatResult.innerHTML = html;
+}
+
+function drawParliament(seats) {
+
+  const svg = document.getElementById("parliament");
+  svg.innerHTML = "";
+
+  const radius = 300;
+  const centerX = 400;
+  const centerY = 380;
+
+  let seatArray = [];
+
+  Object.entries(seats).forEach(([party, count]) => {
+    for (let i = 0; i < count; i++) {
+      seatArray.push(party);
+    }
+  });
+
+  seatArray.forEach((party, index) => {
+
+    const angle = Math.PI * (index / TOTAL_SEATS);
+    const x = centerX + radius * Math.cos(Math.PI - angle);
+    const y = centerY - radius * Math.sin(Math.PI - angle);
+
+    const circle = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "circle"
+    );
+
+    circle.setAttribute("cx", x);
+    circle.setAttribute("cy", y);
+    circle.setAttribute("r", 6);
+    circle.setAttribute("fill", colorMap[party] || "#999");
+
+    svg.appendChild(circle);
+  });
+}
+
+function buildCoalitionCalculator(seats) {
+
+  const container = document.getElementById("coalition");
+  container.innerHTML = "";
+
+  const parties = Object.keys(seats);
+  let suggestions = [];
+
+  function getSeatSum(combo) {
+    return combo.reduce((sum, p) => sum + seats[p], 0);
+  }
+
+  for (let i = 0; i < parties.length; i++) {
+    for (let j = i+1; j < parties.length; j++) {
+
+      const combo = [parties[i], parties[j]];
+      const total = getSeatSum(combo);
+
+      if (total >= MAJORITY) {
+        suggestions.push({ combo, total });
+      }
+    }
+  }
+
+  suggestions.sort((a,b) => a.total - b.total);
+
+  let html = "<h4>Automatische Mehrheits-Koalitionen:</h4>";
+
+  if (suggestions.length === 0) {
+    html += "Keine Mehrheit möglich.";
+  } else {
+    suggestions.forEach(s => {
+      html += `<div>
+        ${s.combo.join(" + ")} → 
+        <strong>${s.total} Sitze</strong>
+      </div>`;
+    });
+  }
+
+  container.innerHTML = html;
 }
 
 loadMap();
