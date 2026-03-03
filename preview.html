@@ -1,0 +1,60 @@
+﻿<div id="mapContainer"></div>
+
+<script>
+fetch("btw25_wahlkreise_svg.svg")
+  .then(res => res.text())
+  .then(svg => {
+    document.getElementById("mapContainer").innerHTML = svg;
+    assignWahlkreisIDs();
+  });
+
+function assignWahlkreisIDs() {
+  const paths = document.querySelectorAll("path");
+  let i = 1;
+
+  paths.forEach(p => {
+    const wkNr = String(i).padStart(3, "0");
+    p.setAttribute("id", "WK_" + wkNr);
+    p.classList.add("wk");
+    i++;
+  });
+
+  const tooltip = document.getElementById("tooltip");
+
+paths.forEach((path, index) => {
+
+  const wahlkreisNr = (index + 1).toString();
+  if (!data[wahlkreisNr]) return;
+
+  const winner = data[wahlkreisNr].winner;
+  path.style.fill = colorMap[winner] || "#ccc";
+  path.style.fillOpacity = 1;
+
+  // 👇 Hover Events
+  path.addEventListener("mousemove", (e) => {
+
+    const values = data[wahlkreisNr].values;
+
+    let html = `<strong>Wahlkreis ${wahlkreisNr}</strong><br><br>`;
+
+    Object.entries(values)
+      .sort((a,b) => b[1] - a[1])
+      .forEach(([party, percent]) => {
+        html += `${party}: ${percent.toFixed(2)}%<br>`;
+      });
+
+    tooltip.innerHTML = html;
+    tooltip.style.left = e.pageX + 15 + "px";
+    tooltip.style.top = e.pageY + 15 + "px";
+    tooltip.style.display = "block";
+  });
+
+  path.addEventListener("mouseleave", () => {
+    tooltip.style.display = "none";
+  });
+
+});
+
+  console.log("Wahlkreise erkannt:", i-1);
+}
+</script>

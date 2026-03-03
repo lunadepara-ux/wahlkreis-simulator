@@ -1,0 +1,4100 @@
+{
+  "1": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 14.795735,
+      "CDU": 26.507808,
+      "GRÜNE": 22.576322,
+      "FDP": 2.339599,
+      "AfD": 15.030894,
+      "Die Linke": 5.409704,
+      "SSW": 11.193785,
+      "FREIE WÄHLER": 0.806632,
+      "Volt": 0.757098,
+      "BÜNDNIS DEUTSCHLAND": 0.336836
+    }
+  },
+  "2": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 20.409647,
+      "CDU": 32.652553,
+      "GRÜNE": 10.888113,
+      "FDP": 3.765134,
+      "AfD": 16.025721,
+      "Die Linke": 5.186063,
+      "SSW": 9.333604,
+      "FREIE WÄHLER": 0.971732,
+      "Volt": 0.767433
+    }
+  },
+  "3": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.137786,
+      "CDU": 35.034803,
+      "GRÜNE": 9.947882,
+      "FDP": 3.872713,
+      "AfD": 20.430026,
+      "Die Linke": 5.9657,
+      "FREIE WÄHLER": 2.141869,
+      "Volt": 1.469221
+    }
+  },
+  "4": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.162768,
+      "CDU": 32.773521,
+      "GRÜNE": 11.946874,
+      "FDP": 4.767546,
+      "AfD": 15.415453,
+      "Die Linke": 5.062235,
+      "SSW": 6.462738,
+      "FREIE WÄHLER": 0.797703,
+      "Volt": 0.774361,
+      "BÜNDNIS DEUTSCHLAND": 0.368799
+    }
+  },
+  "5": {
+    "winner": "GRÜNE",
+    "values": {
+      "SPD": 22.076344,
+      "CDU": 21.025777,
+      "GRÜNE": 26.042143,
+      "FDP": 2.905004,
+      "AfD": 10.716864,
+      "Die Linke": 9.598907,
+      "SSW": 4.431515,
+      "Die PARTEI": 1.216034,
+      "FREIE WÄHLER": 0.46752,
+      "Volt": 1.519892
+    }
+  },
+  "6": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 23.975923,
+      "CDU": 32.721063,
+      "GRÜNE": 13.302943,
+      "FDP": 3.311623,
+      "AfD": 17.816996,
+      "Die Linke": 5.379182,
+      "FREIE WÄHLER": 2.132479,
+      "Volt": 1.359791
+    }
+  },
+  "7": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 24.969111,
+      "CDU": 31.758596,
+      "GRÜNE": 12.754769,
+      "FDP": 3.854808,
+      "AfD": 15.277094,
+      "Die Linke": 6.370102,
+      "SSW": 2.318912,
+      "FREIE WÄHLER": 1.099939,
+      "Volt": 1.216964,
+      "BÜNDNIS DEUTSCHLAND": 0.379705
+    }
+  },
+  "8": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 24.488329,
+      "CDU": 32.316577,
+      "GRÜNE": 11.806881,
+      "FDP": 4.483282,
+      "AfD": 17.172823,
+      "Die Linke": 6.015796,
+      "FREIE WÄHLER": 1.55251,
+      "Volt": 1.595833,
+      "BÜNDNIS DEUTSCHLAND": 0.567968
+    }
+  },
+  "9": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 25.435619,
+      "CDU": 34.758672,
+      "GRÜNE": 10.446844,
+      "FDP": 3.623256,
+      "AfD": 17.323882,
+      "Die Linke": 5.500027,
+      "FREIE WÄHLER": 1.761184,
+      "Volt": 1.150516
+    }
+  },
+  "10": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 23.362903,
+      "CDU": 32.73565,
+      "GRÜNE": 14.039036,
+      "FDP": 3.603041,
+      "AfD": 17.1407,
+      "Die Linke": 5.885371,
+      "FREIE WÄHLER": 1.831284,
+      "Volt": 1.402016
+    }
+  },
+  "11": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 28.083554,
+      "CDU": 23.770388,
+      "GRÜNE": 19.383853,
+      "FDP": 2.841582,
+      "AfD": 15.50031,
+      "Die Linke": 7.178029,
+      "FREIE WÄHLER": 1.382697,
+      "Volt": 1.657825,
+      "MLPD": 0.201761
+    }
+  },
+  "12": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 20.087419,
+      "AfD": 35.85398,
+      "CDU": 20.885614,
+      "Die Linke": 12.706323,
+      "FDP": 2.86879,
+      "GRÜNE": 3.258757,
+      "FREIE WÄHLER": 2.799868,
+      "MLPD": 0.389378,
+      "BÜNDNIS DEUTSCHLAND": 1.149872
+    }
+  },
+  "13": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 21.495246,
+      "AfD": 36.853335,
+      "CDU": 20.36333,
+      "Die Linke": 11.225509,
+      "FDP": 2.742649,
+      "GRÜNE": 3.565071,
+      "FREIE WÄHLER": 3.754861
+    }
+  },
+  "14": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 16.914084,
+      "AfD": 26.804942,
+      "CDU": 19.374549,
+      "Die Linke": 25.634123,
+      "FDP": 2.83666,
+      "GRÜNE": 5.293747,
+      "FREIE WÄHLER": 1.932218,
+      "MLPD": 0.350852,
+      "BÜNDNIS DEUTSCHLAND": 0.858826
+    }
+  },
+  "15": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 14.558874,
+      "AfD": 37.282849,
+      "CDU": 21.24778,
+      "Die Linke": 13.339362,
+      "FDP": 2.606897,
+      "GRÜNE": 4.909457,
+      "Tierschutzpartei": 3.356908,
+      "FREIE WÄHLER": 2.697873
+    }
+  },
+  "16": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 13.771406,
+      "AfD": 45.207014,
+      "CDU": 19.899925,
+      "Die Linke": 10.843831,
+      "FDP": 3.542354,
+      "GRÜNE": 2.277271,
+      "FREIE WÄHLER": 2.870975
+    }
+  },
+  "17": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 19.567495,
+      "AfD": 41.053236,
+      "CDU": 19.447565,
+      "Die Linke": 10.69837,
+      "FDP": 2.722407,
+      "GRÜNE": 2.127176,
+      "FREIE WÄHLER": 2.261624,
+      "BÜNDNIS DEUTSCHLAND": 2.122126
+    }
+  },
+  "18": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 27.452421,
+      "GRÜNE": 21.486309,
+      "CDU": 16.951553,
+      "FDP": 3.483072,
+      "Die Linke": 16.517567,
+      "AfD": 10.598315,
+      "FREIE WÄHLER": 0.781708,
+      "Volt": 2.496885,
+      "MLPD": 0.232169
+    }
+  },
+  "19": {
+    "winner": "GRÜNE",
+    "values": {
+      "SPD": 23.433179,
+      "GRÜNE": 27.512623,
+      "CDU": 21.196493,
+      "FDP": 3.351222,
+      "Die Linke": 16.039304,
+      "AfD": 7.555632,
+      "FREIE WÄHLER": 0.652737,
+      "MLPD": 0.258811
+    }
+  },
+  "20": {
+    "winner": "GRÜNE",
+    "values": {
+      "SPD": 25.982429,
+      "GRÜNE": 27.74983,
+      "CDU": 20.97368,
+      "FDP": 3.996549,
+      "Die Linke": 12.600248,
+      "AfD": 7.747643,
+      "FREIE WÄHLER": 0.949621
+    }
+  },
+  "21": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 26.630604,
+      "GRÜNE": 22.671151,
+      "CDU": 28.082087,
+      "FDP": 3.716218,
+      "Die Linke": 7.889825,
+      "AfD": 8.074895,
+      "FREIE WÄHLER": 0.727592,
+      "Volt": 2.207628
+    }
+  },
+  "22": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 32.324088,
+      "GRÜNE": 13.019043,
+      "CDU": 24.668929,
+      "FDP": 3.201054,
+      "Die Linke": 10.632414,
+      "AfD": 14.523936,
+      "FREIE WÄHLER": 1.378691,
+      "MLPD": 0.251844
+    }
+  },
+  "23": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 32.191598,
+      "GRÜNE": 11.608822,
+      "CDU": 21.355525,
+      "FDP": 2.524474,
+      "Die Linke": 11.570002,
+      "AfD": 17.579731,
+      "FREIE WÄHLER": 1.103927,
+      "Volt": 1.854233,
+      "MLPD": 0.211687
+    }
+  },
+  "24": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 41.157463,
+      "CDU": 22.062633,
+      "GRÜNE": 5.044553,
+      "FDP": 2.31894,
+      "AfD": 20.178211,
+      "Die Linke": 5.788608,
+      "Tierschutzpartei": 2.786484
+    }
+  },
+  "25": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.499035,
+      "CDU": 40.527016,
+      "GRÜNE": 6.979131,
+      "FDP": 2.53043,
+      "AfD": 20.32574,
+      "Die Linke": 5.506391,
+      "FREIE WÄHLER": 1.632257
+    }
+  },
+  "26": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 35.361412,
+      "CDU": 26.792695,
+      "GRÜNE": 5.766828,
+      "FDP": 2.655547,
+      "AfD": 19.734846,
+      "Die Linke": 5.510227,
+      "dieBasis": 0.794526,
+      "Die PARTEI": 1.007691,
+      "FREIE WÄHLER": 1.693964,
+      "Volt": 0.682263
+    }
+  },
+  "27": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 34.392756,
+      "CDU": 23.958695,
+      "GRÜNE": 14.906987,
+      "FDP": 3.11133,
+      "AfD": 12.996394,
+      "Die Linke": 8.132216,
+      "FREIE WÄHLER": 1.074644,
+      "Volt": 1.426978
+    }
+  },
+  "28": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 26.493375,
+      "CDU": 29.291069,
+      "GRÜNE": 9.818354,
+      "FDP": 5.561609,
+      "AfD": 19.249335,
+      "Die Linke": 6.889356,
+      "FREIE WÄHLER": 2.138452,
+      "BÜNDNIS DEUTSCHLAND": 0.558449
+    }
+  },
+  "29": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 30.457957,
+      "CDU": 32.717228,
+      "GRÜNE": 7.1602,
+      "FDP": 2.705282,
+      "AfD": 19.782253,
+      "Die Linke": 5.172951,
+      "FREIE WÄHLER": 2.004129
+    }
+  },
+  "30": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 25.554484,
+      "CDU": 36.347035,
+      "GRÜNE": 9.766755,
+      "FDP": 2.811596,
+      "AfD": 18.015309,
+      "Die Linke": 6.238549,
+      "Volt": 1.266273
+    }
+  },
+  "31": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 24.367922,
+      "CDU": 43.867301,
+      "GRÜNE": 7.292476,
+      "FDP": 3.481348,
+      "AfD": 14.116502,
+      "Die Linke": 5.127727,
+      "FREIE WÄHLER": 1.428038,
+      "BÜNDNIS DEUTSCHLAND": 0.318687
+    }
+  },
+  "32": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 17.483882,
+      "CDU": 45.834162,
+      "GRÜNE": 6.065804,
+      "FDP": 3.298795,
+      "AfD": 20.628357,
+      "Die Linke": 5.100093,
+      "FREIE WÄHLER": 1.588906
+    }
+  },
+  "33": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 27.530362,
+      "CDU": 35.360149,
+      "GRÜNE": 8.078894,
+      "FDP": 3.303619,
+      "AfD": 16.990837,
+      "Die Linke": 5.972356,
+      "FREIE WÄHLER": 2.763783
+    }
+  },
+  "34": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 24.813888,
+      "CDU": 35.942431,
+      "GRÜNE": 11.177001,
+      "FDP": 2.999594,
+      "AfD": 16.995075,
+      "Die Linke": 6.706685,
+      "Volt": 1.365324
+    }
+  },
+  "35": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 42.082917,
+      "CDU": 27.321385,
+      "GRÜNE": 5.360268,
+      "FDP": 2.357911,
+      "AfD": 19.290746,
+      "FREIE WÄHLER": 2.114163,
+      "Volt": 1.472609
+    }
+  },
+  "36": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 26.293007,
+      "CDU": 33.179845,
+      "GRÜNE": 10.59067,
+      "FDP": 3.476186,
+      "AfD": 16.616366,
+      "Die Linke": 5.92682,
+      "FREIE WÄHLER": 1.806214,
+      "Volt": 1.509011
+    }
+  },
+  "37": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 27.849892,
+      "CDU": 26.326618,
+      "GRÜNE": 16.418521,
+      "FDP": 2.527324,
+      "AfD": 15.50858,
+      "Die Linke": 7.098445,
+      "dieBasis": 0.994314,
+      "FREIE WÄHLER": 2.407903,
+      "Volt": 0.868403
+    }
+  },
+  "38": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 24.244643,
+      "CDU": 36.583638,
+      "GRÜNE": 10.05822,
+      "FDP": 2.949403,
+      "AfD": 17.997119,
+      "Die Linke": 5.711542,
+      "FREIE WÄHLER": 1.710582,
+      "Volt": 0.744853
+    }
+  },
+  "39": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 28.195416,
+      "CDU": 29.732929,
+      "GRÜNE": 13.676886,
+      "FDP": 2.602807,
+      "AfD": 11.379338,
+      "Die Linke": 11.750634,
+      "FREIE WÄHLER": 1.148151,
+      "Volt": 1.222285
+    }
+  },
+  "40": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 31.745768,
+      "CDU": 28.635631,
+      "GRÜNE": 7.495653,
+      "FDP": 2.802639,
+      "AfD": 20.118396,
+      "Die Linke": 5.541988,
+      "Die PARTEI": 1.055465,
+      "FREIE WÄHLER": 1.684524,
+      "Volt": 0.648877
+    }
+  },
+  "41": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 34.108478,
+      "CDU": 23.001339,
+      "GRÜNE": 15.697035,
+      "FDP": 2.799212,
+      "AfD": 13.119292,
+      "Die Linke": 8.443192,
+      "FREIE WÄHLER": 0.757624,
+      "PIRATEN": 0.509521,
+      "Volt": 1.33723,
+      "MLPD": 0.227077
+    }
+  },
+  "42": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 36.19817,
+      "CDU": 17.820404,
+      "GRÜNE": 19.084433,
+      "FDP": 2.384447,
+      "AfD": 10.242557,
+      "Die Linke": 11.414219,
+      "Die PARTEI": 0.874318,
+      "FREIE WÄHLER": 0.545974,
+      "PIRATEN": 0.31063,
+      "Volt": 0.967317,
+      "MLPD": 0.157529
+    }
+  },
+  "43": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 27.393308,
+      "CDU": 34.814369,
+      "GRÜNE": 9.488401,
+      "FDP": 2.671624,
+      "AfD": 17.352987,
+      "Die Linke": 5.462114,
+      "FREIE WÄHLER": 1.32115,
+      "Volt": 0.966644,
+      "BÜNDNIS DEUTSCHLAND": 0.529403
+    }
+  },
+  "44": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 23.072715,
+      "CDU": 35.201064,
+      "GRÜNE": 9.270894,
+      "FDP": 3.409137,
+      "AfD": 20.136941,
+      "Die Linke": 5.918768,
+      "FREIE WÄHLER": 1.982137,
+      "Volt": 1.008344
+    }
+  },
+  "45": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 33.936139,
+      "CDU": 27.917392,
+      "GRÜNE": 6.439232,
+      "FDP": 2.582044,
+      "AfD": 21.296388,
+      "Die Linke": 4.9637,
+      "FREIE WÄHLER": 1.458559,
+      "Volt": 0.906672,
+      "BÜNDNIS DEUTSCHLAND": 0.499874
+    }
+  },
+  "46": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 32.99361,
+      "CDU": 28.570735,
+      "GRÜNE": 7.155692,
+      "FDP": 3.210834,
+      "AfD": 20.867647,
+      "Die Linke": 5.381685,
+      "FREIE WÄHLER": 1.819796
+    }
+  },
+  "47": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 31.759425,
+      "CDU": 30.031146,
+      "GRÜNE": 8.932497,
+      "FDP": 2.506921,
+      "AfD": 17.188136,
+      "Die Linke": 5.54108,
+      "Tierschutzpartei": 1.702834,
+      "FREIE WÄHLER": 1.123687,
+      "PIRATEN": 0.474819,
+      "Volt": 0.739455
+    }
+  },
+  "48": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 30.748616,
+      "CDU": 29.320264,
+      "GRÜNE": 9.414575,
+      "FDP": 2.491205,
+      "AfD": 18.225309,
+      "Die Linke": 6.854377,
+      "FREIE WÄHLER": 1.208824,
+      "Volt": 0.807403
+    }
+  },
+  "49": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 30.584653,
+      "CDU": 28.309599,
+      "GRÜNE": 6.893393,
+      "FDP": 2.485437,
+      "AfD": 21.346079,
+      "Die Linke": 7.036176,
+      "dieBasis": 0.887656,
+      "FREIE WÄHLER": 1.449312,
+      "Volt": 1.007695
+    }
+  },
+  "50": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 33.416952,
+      "CDU": 24.734236,
+      "GRÜNE": 14.250156,
+      "FDP": 2.892294,
+      "AfD": 13.270068,
+      "Die Linke": 8.206285,
+      "FREIE WÄHLER": 1.083152,
+      "Volt": 1.58616,
+      "MLPD": 0.162051
+    }
+  },
+  "51": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 28.585321,
+      "CDU": 30.934608,
+      "GRÜNE": 6.932425,
+      "FDP": 3.232893,
+      "AfD": 22.100646,
+      "Die Linke": 6.174748,
+      "Volt": 1.32366,
+      "MLPD": 0.153214
+    }
+  },
+  "52": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 30.405142,
+      "CDU": 30.290981,
+      "GRÜNE": 7.733122,
+      "FDP": 2.594572,
+      "AfD": 19.779721,
+      "Die Linke": 5.959084,
+      "FREIE WÄHLER": 1.657932,
+      "Volt": 1.092315,
+      "BÜNDNIS DEUTSCHLAND": 0.487131
+    }
+  },
+  "53": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 25.615223,
+      "CDU": 29.124308,
+      "GRÜNE": 15.367527,
+      "FDP": 3.628484,
+      "AfD": 14.209121,
+      "Die Linke": 9.147269,
+      "FREIE WÄHLER": 1.272639,
+      "Volt": 1.467811,
+      "MLPD": 0.167619
+    }
+  },
+  "54": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 25.197409,
+      "GRÜNE": 18.936244,
+      "CDU": 23.978522,
+      "FDP": 2.89654,
+      "Die Linke": 13.364263,
+      "AfD": 11.780849,
+      "Die PARTEI": 1.153127,
+      "Volt": 1.7605,
+      "MLPD": 0.146018,
+      "BÜNDNIS DEUTSCHLAND": 0.414235
+    }
+  },
+  "55": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 30.271576,
+      "GRÜNE": 10.857859,
+      "CDU": 21.022,
+      "FDP": 2.643664,
+      "Die Linke": 12.08031,
+      "AfD": 19.412418,
+      "FREIE WÄHLER": 1.141907,
+      "Volt": 1.517346,
+      "MLPD": 0.294895,
+      "BÜNDNIS DEUTSCHLAND": 0.758024
+    }
+  },
+  "56": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 22.240442,
+      "AfD": 38.87902,
+      "CDU": 19.638031,
+      "FDP": 2.161337,
+      "GRÜNE": 3.061705,
+      "Die Linke": 10.530351,
+      "FREIE WÄHLER": 3.489114
+    }
+  },
+  "57": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 19.355825,
+      "AfD": 38.348876,
+      "CDU": 18.255408,
+      "FDP": 2.363017,
+      "GRÜNE": 3.883115,
+      "Die Linke": 12.233343,
+      "FREIE WÄHLER": 3.682522,
+      "Die PARTEI": 1.877894
+    }
+  },
+  "58": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 19.98175,
+      "AfD": 30.841885,
+      "CDU": 24.842821,
+      "FDP": 2.885112,
+      "GRÜNE": 6.635422,
+      "Die Linke": 9.47467,
+      "FREIE WÄHLER": 3.251065,
+      "Die PARTEI": 2.087275
+    }
+  },
+  "59": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 18.725441,
+      "AfD": 36.112492,
+      "CDU": 18.102812,
+      "FDP": 2.454938,
+      "GRÜNE": 3.989536,
+      "Die Linke": 13.314323,
+      "FREIE WÄHLER": 3.478352,
+      "Die PARTEI": 1.594245,
+      "Volt": 1.080968,
+      "BÜNDNIS DEUTSCHLAND": 1.146893
+    }
+  },
+  "60": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 25.768273,
+      "AfD": 33.643341,
+      "CDU": 19.415002,
+      "FDP": 2.332587,
+      "GRÜNE": 3.737661,
+      "Die Linke": 10.887287,
+      "FREIE WÄHLER": 3.014101,
+      "Volt": 1.20175
+    }
+  },
+  "61": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 21.762735,
+      "AfD": 18.982377,
+      "CDU": 20.569431,
+      "FDP": 3.997268,
+      "GRÜNE": 15.885109,
+      "Die Linke": 13.822441,
+      "FREIE WÄHLER": 1.961218,
+      "Volt": 1.709599,
+      "BÜNDNIS DEUTSCHLAND": 0.689063
+    }
+  },
+  "62": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 17.634098,
+      "AfD": 33.610677,
+      "CDU": 23.846653,
+      "FDP": 2.498604,
+      "GRÜNE": 5.155163,
+      "Die Linke": 11.279183,
+      "FREIE WÄHLER": 2.771755,
+      "Die PARTEI": 1.572506,
+      "Volt": 1.082041
+    }
+  },
+  "63": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 20.803082,
+      "AfD": 38.204097,
+      "CDU": 18.797064,
+      "FDP": 2.380503,
+      "GRÜNE": 3.01139,
+      "Die Linke": 11.327629,
+      "FREIE WÄHLER": 3.863593
+    }
+  },
+  "64": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 23.338171,
+      "AfD": 41.998319,
+      "CDU": 17.349324,
+      "FDP": 2.717898,
+      "Die Linke": 9.79146,
+      "FREIE WÄHLER": 2.201512,
+      "Die PARTEI": 1.724085,
+      "Volt": 0.87923
+    }
+  },
+  "65": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 16.597033,
+      "AfD": 42.977802,
+      "CDU": 18.283262,
+      "FDP": 2.872,
+      "GRÜNE": 2.031891,
+      "Die Linke": 11.974181,
+      "FREIE WÄHLER": 5.26383
+    }
+  },
+  "66": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 16.047127,
+      "CDU": 22.031032,
+      "AfD": 39.189358,
+      "Die Linke": 12.568812,
+      "FDP": 3.431779,
+      "GRÜNE": 2.753595,
+      "FREIE WÄHLER": 3.978298
+    }
+  },
+  "67": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 13.611367,
+      "CDU": 22.359026,
+      "AfD": 43.191938,
+      "Die Linke": 10.554383,
+      "FDP": 2.739514,
+      "GRÜNE": 2.22645,
+      "FREIE WÄHLER": 2.816801,
+      "BÜNDNIS DEUTSCHLAND": 1.406022
+    }
+  },
+  "68": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 13.973727,
+      "CDU": 23.48886,
+      "AfD": 39.009084,
+      "Die Linke": 11.890463,
+      "FDP": 2.239822,
+      "GRÜNE": 3.261392,
+      "FREIE WÄHLER": 2.880523,
+      "Die PARTEI": 1.533999,
+      "BÜNDNIS DEUTSCHLAND": 1.72213
+    }
+  },
+  "69": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 17.214382,
+      "CDU": 23.090068,
+      "AfD": 32.233446,
+      "Die Linke": 14.856319,
+      "FDP": 2.70099,
+      "GRÜNE": 5.989608,
+      "FREIE WÄHLER": 2.315633,
+      "MLPD": 0.48998,
+      "BÜNDNIS DEUTSCHLAND": 1.109574
+    }
+  },
+  "70": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 10.47224,
+      "CDU": 29.528792,
+      "AfD": 38.576051,
+      "Die Linke": 10.179672,
+      "FDP": 2.131163,
+      "GRÜNE": 4.833695,
+      "FREIE WÄHLER": 4.278388
+    }
+  },
+  "71": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 17.959065,
+      "CDU": 22.26019,
+      "AfD": 30.640854,
+      "Die Linke": 16.21319,
+      "FDP": 2.941862,
+      "GRÜNE": 5.461543,
+      "FREIE WÄHLER": 1.671234,
+      "Die PARTEI": 1.636247,
+      "MLPD": 0.28923,
+      "BÜNDNIS DEUTSCHLAND": 0.926585
+    }
+  },
+  "72": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 10.060415,
+      "CDU": 24.243846,
+      "AfD": 44.394884,
+      "Die Linke": 10.948004,
+      "FDP": 2.964201,
+      "GRÜNE": 2.411466,
+      "FREIE WÄHLER": 4.058744
+    }
+  },
+  "73": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 10.714152,
+      "CDU": 21.216063,
+      "AfD": 43.75848,
+      "Die Linke": 12.260839,
+      "FDP": 3.438189,
+      "GRÜNE": 1.988597,
+      "FREIE WÄHLER": 3.493583
+    }
+  },
+  "74": {
+    "winner": "GRÜNE",
+    "values": {
+      "SPD": 16.674336,
+      "GRÜNE": 25.290072,
+      "CDU": 14.259865,
+      "Die Linke": 23.952569,
+      "AfD": 8.522466,
+      "FDP": 2.8516,
+      "Tierschutzpartei": 1.124224,
+      "Die PARTEI": 0.923381,
+      "Team Todenhöfer": 0.465732,
+      "FREIE WÄHLER": 0.29287,
+      "MLPD": 0.081457,
+      "SGP": 0.045392,
+      "BÜNDNIS DEUTSCHLAND": 0.124983,
+      "BSW": 4.981905,
+      "MERA25": 0.409148
+    }
+  },
+  "75": {
+    "winner": "GRÜNE",
+    "values": {
+      "SPD": 13.264368,
+      "GRÜNE": 25.83874,
+      "CDU": 16.217425,
+      "Die Linke": 22.869424,
+      "AfD": 16.858134,
+      "FDP": 2.747278,
+      "FREIE WÄHLER": 1.197583,
+      "BüSo": 0.412574,
+      "BÜNDNIS DEUTSCHLAND": 0.594473
+    }
+  },
+  "76": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.878353,
+      "GRÜNE": 12.947488,
+      "CDU": 30.877975,
+      "Die Linke": 11.774839,
+      "AfD": 18.03249,
+      "FDP": 3.579146,
+      "BÜNDNIS DEUTSCHLAND": 0.909709
+    }
+  },
+  "77": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 27.524331,
+      "GRÜNE": 9.289082,
+      "CDU": 26.083485,
+      "Die Linke": 11.438564,
+      "AfD": 19.716393,
+      "FDP": 3.256539,
+      "Die PARTEI": 2.378345,
+      "MLPD": 0.31326
+    }
+  },
+  "78": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.395929,
+      "GRÜNE": 22.111783,
+      "CDU": 30.744385,
+      "Die Linke": 8.781335,
+      "AfD": 10.288641,
+      "FDP": 4.096809,
+      "FREIE WÄHLER": 1.057223,
+      "BÜNDNIS DEUTSCHLAND": 0.523894
+    }
+  },
+  "79": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 23.720549,
+      "GRÜNE": 24.027406,
+      "CDU": 26.258642,
+      "Die Linke": 11.094685,
+      "AfD": 8.615603,
+      "FDP": 4.387311,
+      "Die PARTEI": 1.538634,
+      "BÜNDNIS DEUTSCHLAND": 0.357172
+    }
+  },
+  "80": {
+    "winner": "GRÜNE",
+    "values": {
+      "SPD": 20.50287,
+      "GRÜNE": 24.66733,
+      "CDU": 24.631657,
+      "Die Linke": 12.10639,
+      "AfD": 11.148105,
+      "FDP": 2.694873,
+      "Tierschutzpartei": 2.41436,
+      "Team Todenhöfer": 0.978283,
+      "BüSo": 0.125934,
+      "BÜNDNIS DEUTSCHLAND": 0.28754
+    }
+  },
+  "81": {
+    "winner": "Die Linke",
+    "values": {
+      "SPD": 18.8253,
+      "GRÜNE": 11.1408,
+      "CDU": 19.668317,
+      "Die Linke": 29.973695,
+      "AfD": 13.044319,
+      "FDP": 1.926994,
+      "Tierschutzpartei": 1.832405,
+      "Die PARTEI": 0.921726,
+      "Team Todenhöfer": 1.474071,
+      "FREIE WÄHLER": 0.573748,
+      "MLPD": 0.180893,
+      "BÜNDNIS DEUTSCHLAND": 0.349358
+    }
+  },
+  "82": {
+    "winner": "Die Linke",
+    "values": {
+      "SPD": 13.134924,
+      "GRÜNE": 30.588584,
+      "CDU": 10.019156,
+      "Die Linke": 34.653211,
+      "AfD": 7.737201,
+      "FDP": 2.388625,
+      "BÜNDNIS DEUTSCHLAND": 0.521622
+    }
+  },
+  "83": {
+    "winner": "Die Linke",
+    "values": {
+      "SPD": 8.579559,
+      "GRÜNE": 4.790728,
+      "CDU": 14.078136,
+      "Die Linke": 41.837799,
+      "AfD": 20.539483,
+      "FDP": 1.755395,
+      "Tierschutzpartei": 1.917833,
+      "FREIE WÄHLER": 0.528812,
+      "MLPD": 0.066991,
+      "BüSo": 0.059284,
+      "BÜNDNIS DEUTSCHLAND": 0.217572,
+      "BSW": 5.628409
+    }
+  },
+  "84": {
+    "winner": "AfD",
+    "values": {
+      "SPD": 8.721703,
+      "GRÜNE": 4.111197,
+      "CDU": 29.190648,
+      "Die Linke": 16.797679,
+      "AfD": 29.505752,
+      "FDP": 1.262441,
+      "FREIE WÄHLER": 1.237475,
+      "MLPD": 0.219966,
+      "BÜNDNIS DEUTSCHLAND": 0.347492,
+      "BSW": 8.605648
+    }
+  },
+  "85": {
+    "winner": "Die Linke",
+    "values": {
+      "SPD": 9.033472,
+      "GRÜNE": 5.259471,
+      "CDU": 17.637519,
+      "Die Linke": 33.976388,
+      "AfD": 21.864946,
+      "FDP": 1.447198,
+      "Tierschutzpartei": 2.319668,
+      "FREIE WÄHLER": 0.552024,
+      "BüSo": 0.097302,
+      "BÜNDNIS DEUTSCHLAND": 0.334717,
+      "BSW": 7.477296
+    }
+  },
+  "86": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 19.667688,
+      "CDU": 32.314547,
+      "GRÜNE": 27.936461,
+      "FDP": 4.197174,
+      "Die Linke": 9.337931,
+      "FREIE WÄHLER": 2.368182,
+      "Volt": 2.27808,
+      "BÜNDNIS DEUTSCHLAND": 1.899938
+    }
+  },
+  "87": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 30.538415,
+      "CDU": 40.080569,
+      "GRÜNE": 7.53929,
+      "FDP": 4.65403,
+      "Die Linke": 7.57395,
+      "FREIE WÄHLER": 7.340424,
+      "Volt": 2.273321
+    }
+  },
+  "88": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 19.165568,
+      "CDU": 41.544148,
+      "GRÜNE": 7.583813,
+      "FDP": 3.007939,
+      "AfD": 19.789785,
+      "Die Linke": 5.759378,
+      "FREIE WÄHLER": 1.802578,
+      "Volt": 1.346791
+    }
+  },
+  "89": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.982833,
+      "CDU": 39.850399,
+      "GRÜNE": 7.451257,
+      "FDP": 2.814838,
+      "AfD": 20.316983,
+      "Die Linke": 5.582465,
+      "FREIE WÄHLER": 2.001226
+    }
+  },
+  "90": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 26.074232,
+      "CDU": 34.979742,
+      "GRÜNE": 10.214944,
+      "FDP": 3.676542,
+      "AfD": 16.726076,
+      "Die Linke": 6.436627,
+      "FREIE WÄHLER": 1.250024,
+      "BÜNDNIS DEUTSCHLAND": 0.641812
+    }
+  },
+  "91": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 20.662709,
+      "CDU": 38.382153,
+      "GRÜNE": 9.51197,
+      "FDP": 4.134877,
+      "AfD": 18.410374,
+      "Die Linke": 5.57464,
+      "FREIE WÄHLER": 1.403756,
+      "Volt": 1.391592,
+      "BÜNDNIS DEUTSCHLAND": 0.527929
+    }
+  },
+  "92": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 24.880108,
+      "CDU": 24.579307,
+      "GRÜNE": 20.116758,
+      "FDP": 3.081896,
+      "AfD": 13.20756,
+      "Die Linke": 11.144167,
+      "FREIE WÄHLER": 0.981563,
+      "Volt": 1.779742,
+      "MLPD": 0.228899
+    }
+  },
+  "93": {
+    "winner": "GRÜNE",
+    "values": {
+      "SPD": 16.460234,
+      "CDU": 28.082779,
+      "GRÜNE": 34.143598,
+      "FDP": 3.777643,
+      "AfD": 5.986775,
+      "Die Linke": 8.648137,
+      "FREIE WÄHLER": 0.412865,
+      "Volt": 2.124778,
+      "BÜNDNIS DEUTSCHLAND": 0.265714
+    }
+  },
+  "94": {
+    "winner": "GRÜNE",
+    "values": {
+      "SPD": 25.805318,
+      "CDU": 19.448582,
+      "GRÜNE": 26.037707,
+      "FDP": 2.844085,
+      "AfD": 11.595023,
+      "Die Linke": 11.205921,
+      "FREIE WÄHLER": 0.787739,
+      "Volt": 1.831703,
+      "PdF": 0.443923
+    }
+  },
+  "95": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.648824,
+      "CDU": 33.310249,
+      "GRÜNE": 24.378293,
+      "FDP": 2.466519,
+      "AfD": 8.164976,
+      "Die Linke": 7.69375,
+      "FREIE WÄHLER": 0.486847,
+      "Volt": 1.570929,
+      "PdF": 0.279612
+    }
+  },
+  "96": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.406324,
+      "CDU": 35.602947,
+      "GRÜNE": 11.244661,
+      "FDP": 4.270329,
+      "AfD": 17.492257,
+      "Die Linke": 5.734428,
+      "FREIE WÄHLER": 1.67969,
+      "Volt": 1.569364
+    }
+  },
+  "97": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 17.765978,
+      "CDU": 43.821498,
+      "GRÜNE": 12.74218,
+      "FDP": 3.23493,
+      "AfD": 14.214103,
+      "Die Linke": 5.374859,
+      "FREIE WÄHLER": 1.176988,
+      "Volt": 1.669464
+    }
+  },
+  "98": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 20.723285,
+      "CDU": 36.907167,
+      "GRÜNE": 8.803637,
+      "FDP": 3.254487,
+      "AfD": 21.552954,
+      "Die Linke": 5.98122,
+      "FREIE WÄHLER": 1.731844,
+      "Volt": 1.045406
+    }
+  },
+  "99": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 18.794804,
+      "CDU": 42.204775,
+      "GRÜNE": 13.783257,
+      "FDP": 4.9433,
+      "AfD": 12.425406,
+      "Die Linke": 5.082525,
+      "FREIE WÄHLER": 0.923798,
+      "Volt": 1.380783,
+      "BÜNDNIS DEUTSCHLAND": 0.461353
+    }
+  },
+  "100": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 32.712751,
+      "CDU": 25.557028,
+      "GRÜNE": 11.040416,
+      "FDP": 3.115326,
+      "AfD": 15.533275,
+      "Die Linke": 9.066318,
+      "FREIE WÄHLER": 1.211448,
+      "Volt": 1.561937,
+      "MLPD": 0.201501
+    }
+  },
+  "101": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 33.563875,
+      "CDU": 24.289915,
+      "GRÜNE": 8.592885,
+      "FDP": 3.008466,
+      "AfD": 18.267709,
+      "Die Linke": 9.132866,
+      "FREIE WÄHLER": 1.190068,
+      "Volt": 1.261274
+    }
+  },
+  "102": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 27.440239,
+      "CDU": 32.449389,
+      "GRÜNE": 8.711842,
+      "FDP": 3.226931,
+      "AfD": 18.53728,
+      "Die Linke": 7.48555,
+      "Volt": 1.537076,
+      "MLPD": 0.249209
+    }
+  },
+  "103": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.535525,
+      "CDU": 36.58541,
+      "GRÜNE": 12.456233,
+      "FDP": 4.501209,
+      "AfD": 15.754232,
+      "Die Linke": 6.444995,
+      "Volt": 1.722395
+    }
+  },
+  "104": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 25.009718,
+      "CDU": 35.880771,
+      "GRÜNE": 11.068524,
+      "FDP": 3.892681,
+      "AfD": 17.179264,
+      "Die Linke": 6.640959,
+      "MLPD": 0.328083
+    }
+  },
+  "105": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.197318,
+      "CDU": 36.144669,
+      "GRÜNE": 17.380228,
+      "FDP": 5.323028,
+      "AfD": 9.817144,
+      "Die Linke": 7.17475,
+      "FREIE WÄHLER": 0.552608,
+      "Volt": 1.801093,
+      "MLPD": 0.157273,
+      "BÜNDNIS DEUTSCHLAND": 0.451889
+    }
+  },
+  "106": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 23.066299,
+      "CDU": 28.738754,
+      "GRÜNE": 18.158096,
+      "FDP": 4.149929,
+      "AfD": 12.996912,
+      "Die Linke": 9.311776,
+      "FREIE WÄHLER": 0.620165,
+      "Volt": 1.753594,
+      "MLPD": 0.24302,
+      "BÜNDNIS DEUTSCHLAND": 0.484048,
+      "WerteUnion": 0.477408
+    }
+  },
+  "107": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 27.05176,
+      "CDU": 36.284682,
+      "GRÜNE": 8.486244,
+      "FDP": 4.235836,
+      "AfD": 16.92644,
+      "Die Linke": 7.015038
+    }
+  },
+  "108": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 26.189805,
+      "CDU": 36.353984,
+      "GRÜNE": 9.857924,
+      "FDP": 3.290068,
+      "AfD": 18.259695,
+      "Die PARTEI": 2.494095,
+      "FREIE WÄHLER": 1.067557,
+      "Volt": 1.56522,
+      "BÜNDNIS DEUTSCHLAND": 0.662347,
+      "WerteUnion": 0.259305
+    }
+  },
+  "109": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.444062,
+      "CDU": 37.830711,
+      "GRÜNE": 10.966314,
+      "FDP": 5.47701,
+      "AfD": 14.610893,
+      "Die Linke": 6.662159,
+      "FREIE WÄHLER": 2.008852
+    }
+  },
+  "110": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 20.673683,
+      "CDU": 40.008254,
+      "GRÜNE": 10.555411,
+      "FDP": 3.973348,
+      "AfD": 15.978648,
+      "Die Linke": 6.156327,
+      "FREIE WÄHLER": 1.363004,
+      "Volt": 1.291325
+    }
+  },
+  "111": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.649616,
+      "CDU": 41.22713,
+      "GRÜNE": 9.085536,
+      "FDP": 3.368614,
+      "AfD": 16.005613,
+      "Die Linke": 5.941201,
+      "FREIE WÄHLER": 1.341811,
+      "Volt": 1.38048
+    }
+  },
+  "112": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 28.060461,
+      "CDU": 34.817641,
+      "GRÜNE": 8.155707,
+      "FDP": 3.622327,
+      "AfD": 17.378058,
+      "Die Linke": 6.078623,
+      "FREIE WÄHLER": 1.274292,
+      "BÜNDNIS DEUTSCHLAND": 0.612891
+    }
+  },
+  "113": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 30.221848,
+      "CDU": 31.958207,
+      "GRÜNE": 8.730724,
+      "FDP": 3.483511,
+      "AfD": 16.853399,
+      "Die Linke": 6.15389,
+      "FREIE WÄHLER": 1.316121,
+      "Volt": 1.2823
+    }
+  },
+  "114": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 39.020282,
+      "CDU": 22.044442,
+      "GRÜNE": 7.809459,
+      "FDP": 2.447705,
+      "AfD": 17.655891,
+      "Die Linke": 8.584049,
+      "FREIE WÄHLER": 1.094754,
+      "Volt": 1.103493,
+      "MLPD": 0.239924
+    }
+  },
+  "115": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 33.261795,
+      "CDU": 19.732862,
+      "GRÜNE": 6.881282,
+      "FDP": 2.167889,
+      "AfD": 26.66395,
+      "Die Linke": 9.033777,
+      "FREIE WÄHLER": 1.426243,
+      "MLPD": 0.325093
+    }
+  },
+  "116": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 31.388077,
+      "CDU": 26.906751,
+      "GRÜNE": 8.190166,
+      "FDP": 2.88775,
+      "AfD": 21.036635,
+      "Die Linke": 7.816885,
+      "Team Todenhöfer": 1.358331,
+      "MLPD": 0.415406
+    }
+  },
+  "117": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 32.590956,
+      "CDU": 28.891768,
+      "GRÜNE": 9.199479,
+      "FDP": 3.434565,
+      "AfD": 17.415279,
+      "Die Linke": 6.82618,
+      "FREIE WÄHLER": 1.641775
+    }
+  },
+  "118": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 30.310034,
+      "CDU": 24.655739,
+      "GRÜNE": 8.249869,
+      "FDP": 2.375955,
+      "AfD": 23.075901,
+      "Die Linke": 9.435633,
+      "FREIE WÄHLER": 1.488625,
+      "MLPD": 0.408243
+    }
+  },
+  "119": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 24.682709,
+      "CDU": 35.735692,
+      "GRÜNE": 15.763354,
+      "FDP": 3.096064,
+      "AfD": 11.88671,
+      "Die Linke": 7.470896,
+      "FREIE WÄHLER": 1.121243,
+      "MLPD": 0.243331
+    }
+  },
+  "120": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 33.079512,
+      "CDU": 28.798919,
+      "GRÜNE": 6.783659,
+      "FDP": 2.560077,
+      "AfD": 20.236952,
+      "Die Linke": 5.891771,
+      "Die PARTEI": 1.619768,
+      "FREIE WÄHLER": 0.855962,
+      "MLPD": 0.173379
+    }
+  },
+  "121": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 29.047046,
+      "CDU": 31.621692,
+      "GRÜNE": 7.234735,
+      "FDP": 2.339281,
+      "AfD": 20.777115,
+      "Die Linke": 5.816388,
+      "FREIE WÄHLER": 1.293823,
+      "MLPD": 0.24426,
+      "BÜNDNIS DEUTSCHLAND": 0.440625
+    }
+  },
+  "122": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 31.38498,
+      "CDU": 23.096177,
+      "GRÜNE": 6.075601,
+      "FDP": 3.324743,
+      "AfD": 25.772933,
+      "Die Linke": 8.436185,
+      "FREIE WÄHLER": 1.416186,
+      "MLPD": 0.493195
+    }
+  },
+  "123": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.698764,
+      "CDU": 41.812225,
+      "GRÜNE": 9.428727,
+      "FDP": 3.446259,
+      "AfD": 15.057915,
+      "Die Linke": 5.984854,
+      "FREIE WÄHLER": 1.571256
+    }
+  },
+  "124": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 29.546862,
+      "CDU": 31.685172,
+      "GRÜNE": 6.543906,
+      "FDP": 2.67209,
+      "AfD": 20.986598,
+      "Die Linke": 5.699819,
+      "Die PARTEI": 1.548982,
+      "FREIE WÄHLER": 1.155671,
+      "MLPD": 0.1609
+    }
+  },
+  "125": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 19.560129,
+      "CDU": 47.862809,
+      "GRÜNE": 9.622759,
+      "FDP": 2.943563,
+      "AfD": 12.945722,
+      "Die Linke": 5.102642,
+      "FREIE WÄHLER": 1.962375
+    }
+  },
+  "126": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 20.264762,
+      "CDU": 45.582066,
+      "GRÜNE": 12.799578,
+      "FDP": 3.167407,
+      "AfD": 12.232316,
+      "Die Linke": 4.573694,
+      "Volt": 1.380178
+    }
+  },
+  "127": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 25.170246,
+      "CDU": 37.851132,
+      "GRÜNE": 11.785271,
+      "FDP": 2.963494,
+      "AfD": 15.494808,
+      "Die Linke": 5.999951
+    }
+  },
+  "128": {
+    "winner": "GRÜNE",
+    "values": {
+      "SPD": 20.575393,
+      "CDU": 28.525977,
+      "GRÜNE": 31.200832,
+      "FDP": 3.277809,
+      "AfD": 6.491792,
+      "Die Linke": 6.809467,
+      "Die PARTEI": 1.27747,
+      "Volt": 1.841259
+    }
+  },
+  "129": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 20.768706,
+      "CDU": 41.666905,
+      "GRÜNE": 10.852189,
+      "FDP": 2.933071,
+      "AfD": 16.006119,
+      "Die Linke": 5.614031,
+      "FREIE WÄHLER": 2.158978
+    }
+  },
+  "130": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.073116,
+      "CDU": 41.577878,
+      "GRÜNE": 9.045479,
+      "FDP": 3.112592,
+      "AfD": 17.115064,
+      "Die Linke": 5.494442,
+      "FREIE WÄHLER": 1.30381,
+      "Volt": 1.029848
+    }
+  },
+  "131": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 27.191214,
+      "CDU": 25.969068,
+      "GRÜNE": 16.005609,
+      "FDP": 3.034894,
+      "AfD": 14.327461,
+      "Die Linke": 10.134395,
+      "Die PARTEI": 1.581932,
+      "Team Todenhöfer": 0.792245,
+      "Volt": 0.963182
+    }
+  },
+  "132": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 29.193481,
+      "CDU": 30.124656,
+      "GRÜNE": 7.162331,
+      "FDP": 3.257725,
+      "AfD": 21.28932,
+      "Die Linke": 5.963519,
+      "Die PARTEI": 1.533635,
+      "FREIE WÄHLER": 1.233793,
+      "WerteUnion": 0.241539
+    }
+  },
+  "133": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 24.695718,
+      "CDU": 32.144447,
+      "GRÜNE": 9.281844,
+      "FDP": 3.359474,
+      "AfD": 21.892858,
+      "Die Linke": 5.603864,
+      "FREIE WÄHLER": 1.839918,
+      "Volt": 0.770601,
+      "WerteUnion": 0.411276
+    }
+  },
+  "134": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 23.540997,
+      "CDU": 31.334886,
+      "GRÜNE": 12.121799,
+      "FDP": 3.028375,
+      "AfD": 21.812157,
+      "Die Linke": 6.027982,
+      "FREIE WÄHLER": 2.133804
+    }
+  },
+  "135": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 18.674566,
+      "CDU": 43.137492,
+      "GRÜNE": 7.463845,
+      "FDP": 3.126669,
+      "AfD": 20.545868,
+      "Die Linke": 5.28422,
+      "FREIE WÄHLER": 1.767341
+    }
+  },
+  "136": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 15.244407,
+      "CDU": 45.493268,
+      "GRÜNE": 10.553256,
+      "FDP": 2.372295,
+      "AfD": 18.299366,
+      "Die Linke": 6.260282,
+      "Die PARTEI": 1.777126
+    }
+  },
+  "137": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 25.634518,
+      "CDU": 28.893453,
+      "GRÜNE": 8.231723,
+      "FDP": 3.412005,
+      "AfD": 21.353158,
+      "Die Linke": 5.949422,
+      "Team Todenhöfer": 0.945235,
+      "FREIE WÄHLER": 1.166989,
+      "MLPD": 0.151761,
+      "BSW": 4.261735
+    }
+  },
+  "138": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 30.049758,
+      "CDU": 30.896002,
+      "GRÜNE": 10.295374,
+      "FDP": 3.010199,
+      "AfD": 16.577619,
+      "Die Linke": 6.081801,
+      "Die PARTEI": 1.501217,
+      "FREIE WÄHLER": 0.993754,
+      "MLPD": 0.181388,
+      "BÜNDNIS DEUTSCHLAND": 0.412888
+    }
+  },
+  "139": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 32.694538,
+      "CDU": 24.625604,
+      "GRÜNE": 13.681165,
+      "FDP": 2.886608,
+      "AfD": 14.061112,
+      "Die Linke": 9.420335,
+      "Die PARTEI": 1.723947,
+      "MLPD": 0.259055,
+      "BÜNDNIS DEUTSCHLAND": 0.647636
+    }
+  },
+  "140": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 33.541219,
+      "CDU": 23.746375,
+      "GRÜNE": 8.502384,
+      "FDP": 2.255875,
+      "AfD": 21.493561,
+      "Die Linke": 8.324087,
+      "Volt": 0.969537,
+      "MLPD": 0.280071,
+      "BÜNDNIS DEUTSCHLAND": 0.886893
+    }
+  },
+  "141": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 30.630093,
+      "CDU": 23.72461,
+      "GRÜNE": 14.013298,
+      "FDP": 2.960015,
+      "AfD": 15.87999,
+      "Die Linke": 9.170745,
+      "Die PARTEI": 1.860598,
+      "Volt": 1.151219,
+      "MLPD": 0.244383
+    }
+  },
+  "142": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 32.436342,
+      "CDU": 24.802644,
+      "GRÜNE": 10.304379,
+      "FDP": 2.64908,
+      "AfD": 18.485305,
+      "Die Linke": 9.02926,
+      "Die PARTEI": 2.292989
+    }
+  },
+  "143": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 31.837318,
+      "CDU": 29.80219,
+      "GRÜNE": 9.008772,
+      "FDP": 2.546473,
+      "AfD": 18.62757,
+      "Die Linke": 6.081674,
+      "Volt": 1.248246,
+      "BÜNDNIS DEUTSCHLAND": 0.847756
+    }
+  },
+  "144": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 32.233491,
+      "CDU": 30.063583,
+      "GRÜNE": 6.367137,
+      "FDP": 2.655378,
+      "AfD": 21.542627,
+      "Die Linke": 7.137784
+    }
+  },
+  "145": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.507552,
+      "CDU": 37.290566,
+      "GRÜNE": 9.593114,
+      "FDP": 3.940832,
+      "AfD": 19.430116,
+      "Die Linke": 5.895641,
+      "FREIE WÄHLER": 1.342179
+    }
+  },
+  "146": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.390505,
+      "CDU": 47.719484,
+      "GRÜNE": 6.11227,
+      "FDP": 2.512226,
+      "AfD": 15.906901,
+      "Die Linke": 4.66774,
+      "FREIE WÄHLER": 1.690874
+    }
+  },
+  "147": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 24.475994,
+      "CDU": 34.070579,
+      "GRÜNE": 7.485971,
+      "FDP": 3.17761,
+      "AfD": 20.467409,
+      "Die Linke": 6.43616,
+      "Die PARTEI": 1.306418,
+      "FREIE WÄHLER": 1.405343,
+      "Volt": 0.772219,
+      "WerteUnion": 0.402297
+    }
+  },
+  "148": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 20.774152,
+      "CDU": 42.141763,
+      "GRÜNE": 6.293382,
+      "FDP": 3.489119,
+      "AfD": 19.982462,
+      "Die Linke": 5.082998,
+      "FREIE WÄHLER": 1.298076
+    }
+  },
+  "149": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.741765,
+      "CDU": 38.84585,
+      "GRÜNE": 6.507246,
+      "FDP": 3.01581,
+      "AfD": 20.855072,
+      "Die Linke": 6.532938,
+      "BÜNDNIS DEUTSCHLAND": 0.868248
+    }
+  },
+  "150": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 43.765013,
+      "SPD": 9.985206,
+      "CDU": 24.973355,
+      "FDP": 2.134801,
+      "Die Linke": 8.353085,
+      "GRÜNE": 2.457726,
+      "FREIE WÄHLER": 5.640838,
+      "Die PARTEI": 1.211364,
+      "Volt": 0.720615,
+      "BÜNDNIS DEUTSCHLAND": 0.757998
+    }
+  },
+  "151": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 24.994261,
+      "SPD": 11.73577,
+      "CDU": 21.472218,
+      "FDP": 2.092238,
+      "Die Linke": 21.521955,
+      "GRÜNE": 7.540364,
+      "FREIE WÄHLER": 1.194784,
+      "Die PARTEI": 1.245614,
+      "Volt": 0.98873,
+      "MLPD": 0.158503,
+      "BÜNDNIS DEUTSCHLAND": 0.208787,
+      "BSW": 6.409528
+    }
+  },
+  "152": {
+    "winner": "Die Linke",
+    "values": {
+      "AfD": 18.727423,
+      "SPD": 8.513396,
+      "CDU": 16.022504,
+      "FDP": 2.042908,
+      "Die Linke": 36.795397,
+      "GRÜNE": 10.224274,
+      "FREIE WÄHLER": 1.027346,
+      "Die PARTEI": 1.054503,
+      "PdH": 0.208544,
+      "BÜNDNIS DEUTSCHLAND": 0.201883,
+      "BSW": 5.181822
+    }
+  },
+  "153": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 38.1923,
+      "SPD": 10.920105,
+      "CDU": 24.584854,
+      "FDP": 2.569815,
+      "Die Linke": 8.737955,
+      "GRÜNE": 3.539269,
+      "FREIE WÄHLER": 4.798742,
+      "PdH": 0.284171,
+      "BSW": 6.37279
+    }
+  },
+  "154": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 45.326208,
+      "SPD": 7.330216,
+      "CDU": 23.795424,
+      "FDP": 5.281378,
+      "Die Linke": 9.438143,
+      "GRÜNE": 4.193374,
+      "FREIE WÄHLER": 3.603129,
+      "BÜNDNIS DEUTSCHLAND": 1.032126
+    }
+  },
+  "155": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 48.271708,
+      "SPD": 7.105408,
+      "CDU": 24.119314,
+      "FDP": 2.620837,
+      "Die Linke": 9.77056,
+      "GRÜNE": 2.174564,
+      "FREIE WÄHLER": 5.024467,
+      "BÜNDNIS DEUTSCHLAND": 0.913142
+    }
+  },
+  "156": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 48.867516,
+      "SPD": 6.259714,
+      "CDU": 24.188923,
+      "FDP": 1.919663,
+      "Die Linke": 6.369613,
+      "GRÜNE": 3.029712,
+      "FREIE WÄHLER": 2.333249,
+      "BÜNDNIS DEUTSCHLAND": 0.637937,
+      "BSW": 6.393674
+    }
+  },
+  "157": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 49.073969,
+      "SPD": 8.04198,
+      "CDU": 22.65374,
+      "FDP": 2.82093,
+      "Die Linke": 9.148807,
+      "GRÜNE": 2.992907,
+      "FREIE WÄHLER": 4.414711,
+      "BÜNDNIS DEUTSCHLAND": 0.852956
+    }
+  },
+  "158": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 29.41742,
+      "SPD": 11.720973,
+      "CDU": 27.334553,
+      "FDP": 3.402617,
+      "Die Linke": 14.249037,
+      "GRÜNE": 10.86991,
+      "Volt": 1.902057,
+      "BÜNDNIS DEUTSCHLAND": 1.103433
+    }
+  },
+  "159": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 29.899681,
+      "SPD": 9.367074,
+      "CDU": 24.18497,
+      "FDP": 2.633768,
+      "Die Linke": 16.408937,
+      "GRÜNE": 11.366787,
+      "FREIE WÄHLER": 1.670106,
+      "Die PARTEI": 1.614659,
+      "Volt": 1.91192,
+      "MLPD": 0.173017,
+      "BÜNDNIS DEUTSCHLAND": 0.769081
+    }
+  },
+  "160": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 45.357347,
+      "SPD": 9.060179,
+      "CDU": 26.977855,
+      "FDP": 2.913731,
+      "Die Linke": 9.001007,
+      "GRÜNE": 2.502925,
+      "FREIE WÄHLER": 4.186958
+    }
+  },
+  "161": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 32.190056,
+      "SPD": 16.738468,
+      "CDU": 21.414251,
+      "FDP": 2.299042,
+      "Die Linke": 9.954422,
+      "GRÜNE": 4.546747,
+      "FREIE WÄHLER": 1.433259,
+      "Die PARTEI": 1.048235,
+      "Volt": 0.586207,
+      "PdH": 0.253214,
+      "BÜNDNIS DEUTSCHLAND": 0.385717,
+      "BSW": 9.150381
+    }
+  },
+  "162": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 44.164218,
+      "SPD": 11.679524,
+      "CDU": 27.719964,
+      "FDP": 3.368746,
+      "Die Linke": 10.297289,
+      "GRÜNE": 2.77026
+    }
+  },
+  "163": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 46.653591,
+      "SPD": 6.604278,
+      "CDU": 25.034894,
+      "FDP": 2.200606,
+      "Die Linke": 6.837927,
+      "GRÜNE": 1.596808,
+      "FREIE WÄHLER": 3.408818,
+      "BSW": 6.325744
+    }
+  },
+  "164": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 39.912457,
+      "SPD": 9.91513,
+      "CDU": 23.727613,
+      "FDP": 2.85953,
+      "Die Linke": 7.493986,
+      "GRÜNE": 2.328923,
+      "FREIE WÄHLER": 3.148891,
+      "Die PARTEI": 1.184175,
+      "MLPD": 0.096899,
+      "BÜNDNIS DEUTSCHLAND": 0.306068,
+      "BSW": 9.02633
+    }
+  },
+  "165": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 43.340239,
+      "SPD": 9.982856,
+      "CDU": 26.980499,
+      "FDP": 2.438031,
+      "Die Linke": 9.526395,
+      "GRÜNE": 3.233088,
+      "FREIE WÄHLER": 4.498893
+    }
+  },
+  "166": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 28.215441,
+      "CDU": 31.100781,
+      "GRÜNE": 7.113312,
+      "FDP": 3.276071,
+      "AfD": 21.356103,
+      "Die Linke": 5.70062,
+      "FREIE WÄHLER": 3.237672
+    }
+  },
+  "167": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 27.672665,
+      "CDU": 24.266443,
+      "GRÜNE": 14.060487,
+      "FDP": 2.735492,
+      "AfD": 16.248881,
+      "Die Linke": 11.671625,
+      "FREIE WÄHLER": 1.695023,
+      "Volt": 1.437939,
+      "MLPD": 0.211445
+    }
+  },
+  "168": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 27.751008,
+      "CDU": 32.250599,
+      "GRÜNE": 5.371328,
+      "FDP": 2.428304,
+      "AfD": 22.578997,
+      "Die Linke": 5.290287,
+      "FREIE WÄHLER": 2.891916,
+      "Volt": 0.998043
+    }
+  },
+  "169": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 28.304486,
+      "CDU": 30.08674,
+      "GRÜNE": 5.737618,
+      "FDP": 2.85332,
+      "AfD": 23.963538,
+      "Die Linke": 5.255804,
+      "FREIE WÄHLER": 3.798495
+    }
+  },
+  "170": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 30.280418,
+      "CDU": 29.116143,
+      "GRÜNE": 9.087962,
+      "FDP": 2.302751,
+      "AfD": 18.279783,
+      "Die Linke": 7.575728,
+      "FREIE WÄHLER": 1.747736,
+      "Volt": 0.989634
+    }
+  },
+  "171": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 24.047715,
+      "CDU": 34.322421,
+      "GRÜNE": 6.813509,
+      "FDP": 2.764091,
+      "AfD": 23.113982,
+      "Die Linke": 5.278173,
+      "FREIE WÄHLER": 2.315778,
+      "Volt": 1.344331
+    }
+  },
+  "172": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 27.808611,
+      "CDU": 30.434955,
+      "GRÜNE": 8.633533,
+      "FDP": 2.772723,
+      "AfD": 18.956358,
+      "Die Linke": 7.032972,
+      "FREIE WÄHLER": 2.894799,
+      "Volt": 1.46605
+    }
+  },
+  "173": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 13.645769,
+      "CDU": 43.250892,
+      "GRÜNE": 6.605302,
+      "FDP": 3.440405,
+      "AfD": 22.934114,
+      "Die Linke": 4.185663,
+      "FREIE WÄHLER": 3.511876,
+      "Die PARTEI": 0.926241,
+      "Volt": 1.096273,
+      "BÜNDNIS DEUTSCHLAND": 0.403465
+    }
+  },
+  "174": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 20.505285,
+      "CDU": 34.1429,
+      "GRÜNE": 7.390024,
+      "FDP": 3.272449,
+      "AfD": 24.93462,
+      "Die Linke": 4.861532,
+      "FREIE WÄHLER": 3.104526,
+      "Volt": 1.185102,
+      "BÜNDNIS DEUTSCHLAND": 0.603562
+    }
+  },
+  "175": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 19.462338,
+      "CDU": 37.831249,
+      "GRÜNE": 12.168421,
+      "FDP": 4.806454,
+      "AfD": 16.546753,
+      "Die Linke": 5.356801,
+      "FREIE WÄHLER": 2.179586,
+      "Volt": 1.648399
+    }
+  },
+  "176": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 25.743655,
+      "CDU": 33.655084,
+      "GRÜNE": 9.711166,
+      "FDP": 3.886623,
+      "AfD": 17.478346,
+      "Die Linke": 5.207779,
+      "FREIE WÄHLER": 2.581645,
+      "Volt": 1.735702
+    }
+  },
+  "177": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.147417,
+      "CDU": 36.809084,
+      "GRÜNE": 10.754208,
+      "FDP": 4.230548,
+      "AfD": 17.330336,
+      "Die Linke": 4.984978,
+      "FREIE WÄHLER": 2.148412,
+      "Volt": 1.595016
+    }
+  },
+  "178": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.278928,
+      "CDU": 30.659844,
+      "GRÜNE": 14.905766,
+      "FDP": 4.050095,
+      "AfD": 13.904144,
+      "Die Linke": 10.49863,
+      "FREIE WÄHLER": 1.578747,
+      "Volt": 2.123847
+    }
+  },
+  "179": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 25.303913,
+      "CDU": 31.956532,
+      "GRÜNE": 8.551153,
+      "FDP": 3.64837,
+      "AfD": 19.133327,
+      "Die Linke": 7.572287,
+      "FREIE WÄHLER": 2.353787,
+      "Volt": 1.480631
+    }
+  },
+  "180": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 17.766948,
+      "CDU": 39.799106,
+      "GRÜNE": 13.976933,
+      "FDP": 5.376024,
+      "AfD": 13.08974,
+      "Die Linke": 5.99159,
+      "FREIE WÄHLER": 1.799908,
+      "Volt": 1.63523,
+      "BÜNDNIS DEUTSCHLAND": 0.564522
+    }
+  },
+  "181": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 25.740078,
+      "CDU": 25.992234,
+      "GRÜNE": 16.236321,
+      "FDP": 4.676232,
+      "AfD": 10.758863,
+      "Die Linke": 12.815195,
+      "FREIE WÄHLER": 0.923521,
+      "Die PARTEI": 1.06725,
+      "Volt": 1.586691,
+      "MLPD": 0.203616
+    }
+  },
+  "182": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 18.467893,
+      "CDU": 27.364323,
+      "GRÜNE": 26.4157,
+      "FDP": 4.615789,
+      "AfD": 9.180543,
+      "Die Linke": 9.88083,
+      "FREIE WÄHLER": 0.789204,
+      "Die PARTEI": 0.972825,
+      "Volt": 1.684161,
+      "MLPD": 0.118381,
+      "BÜNDNIS DEUTSCHLAND": 0.280957
+    }
+  },
+  "183": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 28.864444,
+      "CDU": 30.34648,
+      "GRÜNE": 8.054073,
+      "FDP": 3.357602,
+      "AfD": 16.414625,
+      "Die Linke": 8.913797,
+      "FREIE WÄHLER": 2.476295,
+      "Volt": 1.364048,
+      "MLPD": 0.208636
+    }
+  },
+  "184": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.248112,
+      "CDU": 31.195697,
+      "GRÜNE": 14.731607,
+      "FDP": 3.828966,
+      "AfD": 15.243991,
+      "Die Linke": 10.34099,
+      "FREIE WÄHLER": 2.410637
+    }
+  },
+  "185": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.066178,
+      "CDU": 26.732452,
+      "GRÜNE": 21.677821,
+      "FDP": 3.292242,
+      "AfD": 13.609691,
+      "Die Linke": 7.643806,
+      "FREIE WÄHLER": 1.012615,
+      "Tierschutzpartei": 1.377316,
+      "Die PARTEI": 0.921689,
+      "Volt": 2.544954,
+      "MLPD": 0.121236
+    }
+  },
+  "186": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 24.778844,
+      "CDU": 33.988496,
+      "GRÜNE": 8.995245,
+      "FDP": 3.543172,
+      "AfD": 18.462912,
+      "Die Linke": 6.076086,
+      "FREIE WÄHLER": 2.732785,
+      "Volt": 1.42246
+    }
+  },
+  "187": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 20.967396,
+      "CDU": 36.279802,
+      "GRÜNE": 9.140263,
+      "FDP": 3.85353,
+      "AfD": 20.421443,
+      "Die Linke": 5.405604,
+      "FREIE WÄHLER": 2.236506,
+      "Volt": 1.695455
+    }
+  },
+  "188": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 39.529413,
+      "SPD": 8.729136,
+      "CDU": 27.795135,
+      "Die Linke": 11.869218,
+      "FDP": 2.318895,
+      "GRÜNE": 1.823509,
+      "MLPD": 0.20788,
+      "BSW": 7.726814
+    }
+  },
+  "189": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 38.50954,
+      "SPD": 11.908049,
+      "CDU": 22.651262,
+      "Die Linke": 10.104066,
+      "FDP": 1.478106,
+      "GRÜNE": 2.446911,
+      "FREIE WÄHLER": 2.373163,
+      "MLPD": 0.213049,
+      "BSW": 8.083253
+    }
+  },
+  "190": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 32.484009,
+      "SPD": 11.702314,
+      "CDU": 18.527935,
+      "Die Linke": 19.51864,
+      "FDP": 2.283119,
+      "GRÜNE": 5.988581,
+      "FREIE WÄHLER": 2.133202,
+      "MLPD": 0.208011,
+      "BSW": 7.15419
+    }
+  },
+  "191": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 41.160183,
+      "SPD": 10.012139,
+      "CDU": 20.012685,
+      "Die Linke": 12.789159,
+      "FDP": 2.044574,
+      "GRÜNE": 3.002755,
+      "FREIE WÄHLER": 2.206885,
+      "BSW": 7.95188
+    }
+  },
+  "192": {
+    "winner": "Die Linke",
+    "values": {
+      "AfD": 26.655687,
+      "SPD": 7.948898,
+      "CDU": 16.347853,
+      "Die Linke": 36.822271,
+      "FDP": 1.915742,
+      "GRÜNE": 3.121229,
+      "FREIE WÄHLER": 1.096834,
+      "MLPD": 0.201868,
+      "BSW": 5.889619
+    }
+  },
+  "193": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 44.788656,
+      "SPD": 10.853388,
+      "CDU": 19.971209,
+      "Die Linke": 11.865125,
+      "FDP": 2.274231,
+      "GRÜNE": 1.928859,
+      "FREIE WÄHLER": 1.982842,
+      "BSW": 6.33569
+    }
+  },
+  "194": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 44.47687,
+      "SPD": 8.323508,
+      "CDU": 20.558675,
+      "Die Linke": 12.323298,
+      "FDP": 2.238318,
+      "GRÜNE": 2.533064,
+      "FREIE WÄHLER": 2.300186,
+      "BSW": 7.246081
+    }
+  },
+  "195": {
+    "winner": "AfD",
+    "values": {
+      "AfD": 42.095391,
+      "SPD": 10.474094,
+      "CDU": 19.409814,
+      "Die Linke": 10.548439,
+      "FDP": 2.404781,
+      "GRÜNE": 1.617866,
+      "FREIE WÄHLER": 3.511381,
+      "MLPD": 0.178428,
+      "BSW": 8.40501
+    }
+  },
+  "196": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.993524,
+      "CDU": 35.604726,
+      "GRÜNE": 6.196171,
+      "FDP": 3.564579,
+      "AfD": 20.980493,
+      "FREIE WÄHLER": 2.258398,
+      "Die Linke": 5.036046,
+      "Volt": 1.016149,
+      "BSW": 3.349914
+    }
+  },
+  "197": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 19.333456,
+      "CDU": 39.260141,
+      "GRÜNE": 9.125097,
+      "FDP": 3.344751,
+      "AfD": 17.939335,
+      "FREIE WÄHLER": 3.535318,
+      "Die Linke": 5.204211,
+      "Volt": 1.275728,
+      "ÖDP": 0.526119,
+      "BÜNDNIS DEUTSCHLAND": 0.455843
+    }
+  },
+  "198": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 24.407617,
+      "CDU": 35.709564,
+      "GRÜNE": 9.722474,
+      "FDP": 3.048117,
+      "AfD": 16.096752,
+      "FREIE WÄHLER": 3.796697,
+      "Die Linke": 5.851243,
+      "Volt": 1.367537
+    }
+  },
+  "199": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 19.316617,
+      "CDU": 38.167422,
+      "GRÜNE": 7.161251,
+      "FDP": 5.412847,
+      "AfD": 19.303064,
+      "FREIE WÄHLER": 4.286479,
+      "Die Linke": 4.63245,
+      "Volt": 0.914506,
+      "ÖDP": 0.805364
+    }
+  },
+  "200": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 26.275046,
+      "CDU": 32.268036,
+      "GRÜNE": 5.357537,
+      "FDP": 3.25247,
+      "AfD": 21.173483,
+      "FREIE WÄHLER": 3.038583,
+      "Die Linke": 4.382624,
+      "Volt": 0.994232,
+      "BSW": 3.25799
+    }
+  },
+  "201": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 20.378267,
+      "CDU": 40.202294,
+      "GRÜNE": 5.536379,
+      "FDP": 3.124647,
+      "AfD": 16.743749,
+      "FREIE WÄHLER": 8.892649,
+      "Die Linke": 3.679639,
+      "Volt": 1.442376
+    }
+  },
+  "202": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 30.232648,
+      "CDU": 30.796077,
+      "GRÜNE": 8.269854,
+      "FDP": 3.958815,
+      "AfD": 14.222886,
+      "FREIE WÄHLER": 2.656166,
+      "Die Linke": 5.016774,
+      "Volt": 1.003226,
+      "ÖDP": 0.397942,
+      "BSW": 3.445611
+    }
+  },
+  "203": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 23.382698,
+      "CDU": 35.731529,
+      "GRÜNE": 6.285834,
+      "FDP": 3.169611,
+      "AfD": 20.496855,
+      "FREIE WÄHLER": 3.43713,
+      "Die Linke": 5.053852,
+      "Tierschutzpartei": 2.442492
+    }
+  },
+  "204": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 23.701409,
+      "CDU": 27.253493,
+      "GRÜNE": 19.096628,
+      "FDP": 3.772591,
+      "AfD": 10.186091,
+      "FREIE WÄHLER": 1.416602,
+      "Die Linke": 9.155963,
+      "Die PARTEI": 0.677035,
+      "Volt": 1.921088,
+      "ÖDP": 0.485679,
+      "BSW": 2.333421
+    }
+  },
+  "205": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 22.150861,
+      "CDU": 35.340841,
+      "GRÜNE": 7.940768,
+      "FDP": 2.933817,
+      "AfD": 20.348926,
+      "FREIE WÄHLER": 2.188307,
+      "Die Linke": 4.900854,
+      "Volt": 1.357125,
+      "BSW": 2.49695
+    }
+  },
+  "206": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 26.214207,
+      "CDU": 27.092299,
+      "GRÜNE": 7.679888,
+      "FDP": 3.562668,
+      "AfD": 23.049599,
+      "FREIE WÄHLER": 2.869634,
+      "Die Linke": 4.840062,
+      "Volt": 0.919699,
+      "BÜNDNIS DEUTSCHLAND": 0.390608,
+      "BSW": 3.381337
+    }
+  },
+  "207": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 21.931361,
+      "CDU": 34.690891,
+      "GRÜNE": 9.374688,
+      "FDP": 3.093858,
+      "AfD": 19.530323,
+      "FREIE WÄHLER": 2.71253,
+      "Die Linke": 3.947412,
+      "Volt": 1.391737,
+      "BÜNDNIS DEUTSCHLAND": 0.281008,
+      "BSW": 3.046192
+    }
+  },
+  "208": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 27.963931,
+      "CDU": 24.078356,
+      "GRÜNE": 5.709359,
+      "FDP": 2.904712,
+      "AfD": 25.530712,
+      "FREIE WÄHLER": 4.175029,
+      "Die Linke": 4.181248,
+      "Volt": 0.890974,
+      "BÜNDNIS DEUTSCHLAND": 0.253272,
+      "BSW": 4.312406
+    }
+  },
+  "209": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 20.749561,
+      "CDU": 33.289367,
+      "GRÜNE": 4.453934,
+      "FDP": 2.971718,
+      "AfD": 25.085442,
+      "FREIE WÄHLER": 3.375429,
+      "Die Linke": 3.588215,
+      "Tierschutzpartei": 2.798283,
+      "BÜNDNIS DEUTSCHLAND": 0.17052,
+      "BSW": 3.517529
+    }
+  },
+  "210": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 19.234957,
+      "CDU": 38.23196,
+      "GRÜNE": 7.744155,
+      "FDP": 2.629836,
+      "AfD": 19.971827,
+      "FREIE WÄHLER": 2.299283,
+      "Die Linke": 3.992457,
+      "Tierschutzpartei": 1.717307,
+      "Volt": 1.169564,
+      "BSW": 3.008654
+    }
+  },
+  "211": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 43.925909,
+      "SPD": 8.666321,
+      "GRÜNE": 7.59234,
+      "FDP": 2.916031,
+      "AfD": 23.55969,
+      "FREIE WÄHLER": 6.305899,
+      "Die Linke": 4.283514,
+      "dieBasis": 1.153563,
+      "ÖDP": 1.596735
+    }
+  },
+  "212": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 45.910125,
+      "SPD": 10.094415,
+      "GRÜNE": 13.404379,
+      "FDP": 3.625253,
+      "AfD": 15.63548,
+      "FREIE WÄHLER": 4.046594,
+      "Die Linke": 3.930224,
+      "ÖDP": 1.417082,
+      "Volt": 1.153385
+    }
+  },
+  "213": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 43.135343,
+      "SPD": 11.445261,
+      "GRÜNE": 12.602724,
+      "FDP": 2.843674,
+      "AfD": 18.114149,
+      "FREIE WÄHLER": 6.472384,
+      "Die Linke": 4.229003,
+      "dieBasis": 1.157463
+    }
+  },
+  "214": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 42.624082,
+      "SPD": 15.002593,
+      "GRÜNE": 12.027251,
+      "FDP": 4.404856,
+      "AfD": 14.097251,
+      "FREIE WÄHLER": 4.445642,
+      "Die Linke": 3.682294,
+      "Tierschutzpartei": 1.44462,
+      "ÖDP": 0.991949,
+      "Volt": 1.279463
+    }
+  },
+  "215": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 47.07592,
+      "SPD": 11.049429,
+      "GRÜNE": 7.448472,
+      "FDP": 1.902228,
+      "AfD": 20.103851,
+      "FREIE WÄHLER": 5.079272,
+      "Die Linke": 3.962847,
+      "Tierschutzpartei": 1.026721,
+      "Die PARTEI": 0.710452,
+      "ÖDP": 0.833987,
+      "Volt": 0.80682
+    }
+  },
+  "216": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 32.425334,
+      "SPD": 19.763884,
+      "GRÜNE": 24.211638,
+      "FDP": 4.622675,
+      "AfD": 9.035228,
+      "FREIE WÄHLER": 1.462186,
+      "Die Linke": 6.565216,
+      "Volt": 1.630067,
+      "BÜNDNIS DEUTSCHLAND": 0.283772
+    }
+  },
+  "217": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 36.287211,
+      "SPD": 15.463498,
+      "GRÜNE": 24.235918,
+      "FDP": 4.057783,
+      "AfD": 9.044475,
+      "FREIE WÄHLER": 1.788699,
+      "Die Linke": 6.116087,
+      "Die PARTEI": 1.005868,
+      "Volt": 2.000461
+    }
+  },
+  "218": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 30.370588,
+      "SPD": 14.649121,
+      "GRÜNE": 29.770473,
+      "FDP": 3.96995,
+      "AfD": 8.78914,
+      "FREIE WÄHLER": 1.308738,
+      "Die Linke": 5.439236,
+      "Tierschutzpartei": 0.911245,
+      "Die PARTEI": 0.648833,
+      "Volt": 1.542916,
+      "MLPD": 0.057022,
+      "BSW": 2.542739
+    }
+  },
+  "219": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 34.688857,
+      "SPD": 15.863666,
+      "GRÜNE": 28.944056,
+      "FDP": 4.962621,
+      "FREIE WÄHLER": 3.058577,
+      "Die Linke": 6.093612,
+      "Tierschutzpartei": 1.768555,
+      "Die PARTEI": 1.080063,
+      "Volt": 2.114483,
+      "BÜNDNIS DEUTSCHLAND": 0.804762
+    }
+  },
+  "220": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 43.074879,
+      "SPD": 13.335026,
+      "GRÜNE": 19.556183,
+      "FDP": 4.290689,
+      "AfD": 11.195054,
+      "FREIE WÄHLER": 2.964804,
+      "Die Linke": 4.115857,
+      "Tierschutzpartei": 1.467507
+    }
+  },
+  "221": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 40.8707,
+      "SPD": 8.927246,
+      "GRÜNE": 12.554749,
+      "FDP": 2.852174,
+      "AfD": 18.343307,
+      "FREIE WÄHLER": 7.990971,
+      "Die Linke": 4.56029,
+      "dieBasis": 1.166481,
+      "Tierschutzpartei": 1.350846,
+      "Volt": 0.943251,
+      "PdH": 0.174399,
+      "BÜNDNIS DEUTSCHLAND": 0.265585
+    }
+  },
+  "222": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 46.392388,
+      "SPD": 7.723209,
+      "GRÜNE": 14.750684,
+      "FDP": 3.368144,
+      "AfD": 16.501353,
+      "FREIE WÄHLER": 5.119522,
+      "Die Linke": 3.325634,
+      "ÖDP": 0.899778,
+      "BP": 1.134995,
+      "Volt": 0.784294
+    }
+  },
+  "223": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 42.891344,
+      "SPD": 12.891237,
+      "GRÜNE": 16.695104,
+      "FDP": 3.553795,
+      "AfD": 12.896569,
+      "FREIE WÄHLER": 3.226408,
+      "Die Linke": 3.438623,
+      "dieBasis": 0.810468,
+      "Tierschutzpartei": 1.295682,
+      "Die PARTEI": 0.799271,
+      "BP": 0.372175,
+      "Volt": 1.129323
+    }
+  },
+  "224": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 46.874527,
+      "SPD": 12.136827,
+      "GRÜNE": 8.724891,
+      "FDP": 1.90393,
+      "AfD": 18.045997,
+      "FREIE WÄHLER": 6.224163,
+      "Die Linke": 4.008151,
+      "dieBasis": 1.045706,
+      "ÖDP": 1.035808
+    }
+  },
+  "225": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 45.767444,
+      "SPD": 9.438411,
+      "GRÜNE": 12.684374,
+      "FDP": 4.447368,
+      "AfD": 15.511909,
+      "FREIE WÄHLER": 5.552912,
+      "Die Linke": 3.986957,
+      "ÖDP": 1.631028,
+      "Volt": 0.979596
+    }
+  },
+  "226": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 43.280914,
+      "SPD": 9.017135,
+      "GRÜNE": 4.7133,
+      "FDP": 3.848379,
+      "AfD": 27.005415,
+      "FREIE WÄHLER": 8.434092,
+      "Die Linke": 2.277279,
+      "BP": 0.815221,
+      "Volt": 0.608263
+    }
+  },
+  "227": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 34.242465,
+      "SPD": 9.068807,
+      "GRÜNE": 8.260815,
+      "FDP": 3.105102,
+      "AfD": 20.319434,
+      "FREIE WÄHLER": 18.495543,
+      "Die Linke": 3.647783,
+      "Tierschutzpartei": 1.009628,
+      "ÖDP": 0.912669,
+      "BP": 0.420638,
+      "Volt": 0.517115
+    }
+  },
+  "228": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 40.787347,
+      "SPD": 14.019649,
+      "GRÜNE": 5.173495,
+      "FDP": 2.140468,
+      "AfD": 23.534002,
+      "FREIE WÄHLER": 6.408863,
+      "Die Linke": 2.899247,
+      "ÖDP": 1.82971,
+      "Volt": 0.556717,
+      "BSW": 2.650502
+    }
+  },
+  "229": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 34.899697,
+      "SPD": 7.001478,
+      "GRÜNE": 5.411417,
+      "FDP": 1.847681,
+      "AfD": 23.14704,
+      "FREIE WÄHLER": 22.994299,
+      "Die Linke": 2.933061,
+      "ÖDP": 1.133948,
+      "Volt": 0.631379
+    }
+  },
+  "230": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 46.324401,
+      "SPD": 7.898228,
+      "GRÜNE": 5.137538,
+      "FDP": 1.926311,
+      "AfD": 26.019738,
+      "FREIE WÄHLER": 7.903195,
+      "Die Linke": 3.117572,
+      "ÖDP": 1.331744,
+      "BÜNDNIS DEUTSCHLAND": 0.341273
+    }
+  },
+  "231": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 44.512044,
+      "SPD": 10.878747,
+      "GRÜNE": 6.722684,
+      "FDP": 2.593674,
+      "AfD": 21.177256,
+      "FREIE WÄHLER": 7.112453,
+      "Die Linke": 4.039021,
+      "dieBasis": 0.887193,
+      "ÖDP": 0.965037,
+      "Volt": 0.774017,
+      "BÜNDNIS DEUTSCHLAND": 0.337873
+    }
+  },
+  "232": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 38.263032,
+      "SPD": 13.033161,
+      "GRÜNE": 13.087415,
+      "FDP": 2.466893,
+      "AfD": 17.910335,
+      "FREIE WÄHLER": 5.290446,
+      "Die Linke": 4.593168,
+      "Tierschutzpartei": 0.967603,
+      "ÖDP": 0.780782,
+      "Volt": 1.024688,
+      "BÜNDNIS DEUTSCHLAND": 0.152382,
+      "BSW": 2.430095
+    }
+  },
+  "233": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 42.203095,
+      "SPD": 13.86587,
+      "GRÜNE": 4.081455,
+      "FDP": 1.863698,
+      "AfD": 26.986153,
+      "FREIE WÄHLER": 7.380396,
+      "Die Linke": 2.668477,
+      "ÖDP": 0.668477,
+      "BÜNDNIS DEUTSCHLAND": 0.282378
+    }
+  },
+  "234": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 43.532678,
+      "SPD": 11.968034,
+      "GRÜNE": 4.865365,
+      "FDP": 3.03057,
+      "AfD": 23.02822,
+      "FREIE WÄHLER": 7.104873,
+      "Die Linke": 4.106621,
+      "ÖDP": 0.578056
+    }
+  },
+  "235": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 39.416794,
+      "SPD": 14.573056,
+      "GRÜNE": 13.406256,
+      "FDP": 3.040654,
+      "AfD": 18.655242,
+      "FREIE WÄHLER": 3.986621,
+      "Die Linke": 5.110158,
+      "ÖDP": 0.650877,
+      "Volt": 1.160343
+    }
+  },
+  "236": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 44.480575,
+      "SPD": 14.259169,
+      "GRÜNE": 8.241112,
+      "FDP": 2.757277,
+      "AfD": 18.839396,
+      "FREIE WÄHLER": 5.050762,
+      "Die Linke": 4.583224,
+      "dieBasis": 0.741768,
+      "Volt": 1.046716
+    }
+  },
+  "237": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 41.914696,
+      "SPD": 14.374654,
+      "GRÜNE": 8.537413,
+      "FDP": 1.942626,
+      "AfD": 20.925751,
+      "FREIE WÄHLER": 5.417509,
+      "Die Linke": 3.915679,
+      "ÖDP": 0.751305,
+      "BSW": 2.220367
+    }
+  },
+  "238": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 40.358459,
+      "SPD": 17.84987,
+      "GRÜNE": 4.967279,
+      "FDP": 2.456048,
+      "AfD": 23.794127,
+      "FREIE WÄHLER": 4.80406,
+      "Die Linke": 4.499386,
+      "Volt": 0.774899,
+      "BÜNDNIS DEUTSCHLAND": 0.495873
+    }
+  },
+  "239": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 49.334707,
+      "SPD": 9.384435,
+      "GRÜNE": 6.559159,
+      "FDP": 2.016126,
+      "AfD": 21.807978,
+      "FREIE WÄHLER": 6.210351,
+      "Die Linke": 3.808475,
+      "Volt": 0.87877
+    }
+  },
+  "240": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 41.773331,
+      "SPD": 13.173517,
+      "GRÜNE": 8.997318,
+      "FDP": 2.601373,
+      "AfD": 21.250789,
+      "FREIE WÄHLER": 5.403913,
+      "Die Linke": 4.651507,
+      "ÖDP": 1.109873,
+      "Volt": 1.03838
+    }
+  },
+  "241": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 35.913146,
+      "SPD": 17.347912,
+      "GRÜNE": 18.174328,
+      "FDP": 2.949449,
+      "AfD": 14.023665,
+      "FREIE WÄHLER": 4.350762,
+      "Die Linke": 5.64676,
+      "Volt": 1.593978
+    }
+  },
+  "242": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 37.421367,
+      "SPD": 17.854712,
+      "GRÜNE": 10.863551,
+      "FDP": 2.942554,
+      "AfD": 18.511777,
+      "FREIE WÄHLER": 3.88253,
+      "Die Linke": 6.101394,
+      "ÖDP": 1.321373,
+      "Volt": 1.100742
+    }
+  },
+  "243": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 30.183263,
+      "SPD": 17.766821,
+      "GRÜNE": 21.550361,
+      "FDP": 3.306444,
+      "AfD": 12.022406,
+      "FREIE WÄHLER": 1.968849,
+      "Die Linke": 9.765838,
+      "Die PARTEI": 1.061836,
+      "ÖDP": 0.653847,
+      "Volt": 1.490425,
+      "MLPD": 0.229909
+    }
+  },
+  "244": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 36.004093,
+      "SPD": 17.82281,
+      "GRÜNE": 10.842522,
+      "FDP": 2.617516,
+      "AfD": 19.968496,
+      "FREIE WÄHLER": 2.695541,
+      "Die Linke": 7.965168,
+      "ÖDP": 0.711057,
+      "Volt": 1.372797
+    }
+  },
+  "245": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 42.889325,
+      "SPD": 13.027701,
+      "GRÜNE": 12.324355,
+      "FDP": 2.815932,
+      "AfD": 16.920568,
+      "FREIE WÄHLER": 4.521801,
+      "Die Linke": 5.071736,
+      "ÖDP": 0.71201,
+      "Volt": 0.96022,
+      "BÜNDNIS DEUTSCHLAND": 0.333325
+    }
+  },
+  "246": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 43.798311,
+      "SPD": 12.31461,
+      "GRÜNE": 11.811814,
+      "FDP": 3.349164,
+      "AfD": 18.425912,
+      "FREIE WÄHLER": 2.795182,
+      "Die Linke": 4.751939,
+      "ÖDP": 0.698472,
+      "BP": 0.36997,
+      "Volt": 1.069089,
+      "BÜNDNIS DEUTSCHLAND": 0.274076
+    }
+  },
+  "247": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 50.519029,
+      "SPD": 14.531081,
+      "GRÜNE": 6.138712,
+      "FDP": 4.883211,
+      "FREIE WÄHLER": 12.909513,
+      "Die Linke": 5.758187,
+      "ÖDP": 1.281525,
+      "BÜNDNIS DEUTSCHLAND": 3.978741
+    }
+  },
+  "248": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 45.518692,
+      "SPD": 15.68382,
+      "GRÜNE": 8.350604,
+      "FDP": 2.310698,
+      "AfD": 18.082035,
+      "FREIE WÄHLER": 5.061414,
+      "Die Linke": 4.123035,
+      "ÖDP": 0.869703
+    }
+  },
+  "249": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 43.357724,
+      "SPD": 13.436556,
+      "GRÜNE": 7.934916,
+      "FDP": 2.456661,
+      "AfD": 20.820077,
+      "FREIE WÄHLER": 4.814243,
+      "Die Linke": 4.680702,
+      "ÖDP": 0.851093,
+      "BP": 0.56678,
+      "Volt": 0.959402,
+      "MLPD": 0.121848
+    }
+  },
+  "250": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 39.138317,
+      "SPD": 13.765307,
+      "GRÜNE": 19.113867,
+      "FDP": 4.185648,
+      "AfD": 12.964956,
+      "FREIE WÄHLER": 2.979897,
+      "Die Linke": 5.101977,
+      "dieBasis": 1.088206,
+      "Volt": 1.661826
+    }
+  },
+  "251": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 31.053843,
+      "SPD": 14.053727,
+      "GRÜNE": 20.583982,
+      "FDP": 2.809931,
+      "AfD": 17.30358,
+      "FREIE WÄHLER": 3.708783,
+      "Die Linke": 7.444721,
+      "dieBasis": 0.97353,
+      "ÖDP": 0.731845,
+      "Volt": 1.171087,
+      "MLPD": 0.164971
+    }
+  },
+  "252": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 44.501954,
+      "SPD": 12.696359,
+      "GRÜNE": 9.202683,
+      "FDP": 2.773694,
+      "AfD": 18.912374,
+      "FREIE WÄHLER": 5.163733,
+      "Die Linke": 3.948322,
+      "dieBasis": 0.99136,
+      "ÖDP": 1.065876,
+      "Volt": 0.743646
+    }
+  },
+  "253": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 45.065296,
+      "SPD": 12.12464,
+      "GRÜNE": 5.778264,
+      "FDP": 2.394801,
+      "AfD": 21.467746,
+      "FREIE WÄHLER": 6.131182,
+      "Die Linke": 3.403753,
+      "dieBasis": 0.867539,
+      "ÖDP": 0.59332,
+      "BSW": 2.173459
+    }
+  },
+  "254": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 42.481623,
+      "SPD": 10.576576,
+      "GRÜNE": 8.382001,
+      "FDP": 2.886827,
+      "AfD": 23.675814,
+      "FREIE WÄHLER": 3.473663,
+      "Die Linke": 4.513169,
+      "dieBasis": 0.801615,
+      "Tierschutzpartei": 1.699062,
+      "Volt": 0.989334,
+      "PdH": 0.148259,
+      "BÜNDNIS DEUTSCHLAND": 0.372057
+    }
+  },
+  "255": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 43.771379,
+      "SPD": 9.486456,
+      "GRÜNE": 8.09949,
+      "FDP": 2.947583,
+      "AfD": 22.732614,
+      "FREIE WÄHLER": 8.312812,
+      "Die Linke": 4.649666
+    }
+  },
+  "256": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 36.823835,
+      "SPD": 8.423873,
+      "GRÜNE": 12.410596,
+      "FDP": 4.254148,
+      "AfD": 16.676804,
+      "FREIE WÄHLER": 8.638862,
+      "Die Linke": 3.912264,
+      "Tierschutzpartei": 1.56155,
+      "ÖDP": 0.818004,
+      "Volt": 1.156218
+    }
+  },
+  "257": {
+    "winner": "CSU",
+    "values": {
+      "CSU": 45.539084,
+      "SPD": 9.937833,
+      "GRÜNE": 10.370425,
+      "FDP": 2.596285,
+      "AfD": 19.593894,
+      "FREIE WÄHLER": 7.473239,
+      "Die Linke": 4.48924
+    }
+  },
+  "258": {
+    "winner": "GRÜNE",
+    "values": {
+      "CDU": 28.327181,
+      "SPD": 15.652471,
+      "GRÜNE": 28.330283,
+      "FDP": 5.78616,
+      "AfD": 8.587735,
+      "Die Linke": 8.811067,
+      "FREIE WÄHLER": 1.228946,
+      "Die PARTEI": 0.975216,
+      "Volt": 2.125376,
+      "MLPD": 0.175564
+    }
+  },
+  "259": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 30.368295,
+      "SPD": 15.925287,
+      "GRÜNE": 21.254413,
+      "FDP": 4.179693,
+      "AfD": 14.559973,
+      "Die Linke": 8.962983,
+      "FREIE WÄHLER": 1.292391,
+      "Die PARTEI": 1.196364,
+      "Volt": 1.588413,
+      "MLPD": 0.24837
+    }
+  },
+  "260": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 37.347604,
+      "SPD": 16.798145,
+      "GRÜNE": 13.463371,
+      "FDP": 6.109577,
+      "AfD": 17.10662,
+      "Die Linke": 4.880589,
+      "FREIE WÄHLER": 2.969811,
+      "Volt": 0.896936,
+      "MLPD": 0.137537
+    }
+  },
+  "261": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 37.031773,
+      "SPD": 16.19387,
+      "GRÜNE": 15.51137,
+      "FDP": 4.343905,
+      "AfD": 15.694621,
+      "Die Linke": 6.62083,
+      "dieBasis": 0.796491,
+      "FREIE WÄHLER": 2.509956,
+      "Volt": 1.297183
+    }
+  },
+  "262": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 37.732594,
+      "SPD": 16.439423,
+      "GRÜNE": 14.404392,
+      "FDP": 5.289453,
+      "AfD": 17.764545,
+      "Die Linke": 5.381822,
+      "FREIE WÄHLER": 2.987771
+    }
+  },
+  "263": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 37.107875,
+      "SPD": 16.982983,
+      "GRÜNE": 9.278546,
+      "FDP": 4.09226,
+      "AfD": 22.612206,
+      "Die Linke": 4.774186,
+      "dieBasis": 1.158504,
+      "FREIE WÄHLER": 3.118079,
+      "Volt": 0.751311,
+      "MLPD": 0.12405
+    }
+  },
+  "264": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 37.675315,
+      "SPD": 17.1954,
+      "GRÜNE": 12.355435,
+      "FDP": 5.724906,
+      "AfD": 18.051496,
+      "Die Linke": 5.29332,
+      "dieBasis": 1.138559,
+      "FREIE WÄHLER": 2.565568
+    }
+  },
+  "265": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 36.534568,
+      "SPD": 15.162243,
+      "GRÜNE": 16.03973,
+      "FDP": 5.116719,
+      "AfD": 16.876391,
+      "Die Linke": 6.238046,
+      "dieBasis": 0.820442,
+      "FREIE WÄHLER": 1.775667,
+      "Volt": 0.985426,
+      "ÖDP": 0.450768
+    }
+  },
+  "266": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 39.250041,
+      "SPD": 14.995067,
+      "GRÜNE": 11.597747,
+      "FDP": 3.953778,
+      "AfD": 19.507872,
+      "Die Linke": 5.099577,
+      "dieBasis": 1.049716,
+      "FREIE WÄHLER": 2.610675,
+      "Volt": 1.425826,
+      "ÖDP": 0.509701
+    }
+  },
+  "267": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 34.982202,
+      "SPD": 15.499402,
+      "GRÜNE": 8.620163,
+      "FDP": 5.104637,
+      "AfD": 25.056865,
+      "Die Linke": 5.950228,
+      "dieBasis": 0.992223,
+      "FREIE WÄHLER": 2.242475,
+      "Volt": 1.03471,
+      "MLPD": 0.162693,
+      "BÜNDNIS DEUTSCHLAND": 0.354402
+    }
+  },
+  "268": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 36.394252,
+      "SPD": 14.888951,
+      "GRÜNE": 10.031728,
+      "FDP": 4.49771,
+      "AfD": 24.01973,
+      "Die Linke": 4.819864,
+      "dieBasis": 1.119148,
+      "FREIE WÄHLER": 2.498186,
+      "Die PARTEI": 0.930729,
+      "Volt": 0.799701
+    }
+  },
+  "269": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 36.558295,
+      "SPD": 16.44517,
+      "GRÜNE": 10.677993,
+      "FDP": 4.026208,
+      "AfD": 23.382869,
+      "Die Linke": 5.157459,
+      "FREIE WÄHLER": 2.186718,
+      "Die PARTEI": 1.406141,
+      "MLPD": 0.159147
+    }
+  },
+  "270": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 41.386136,
+      "SPD": 14.056524,
+      "GRÜNE": 8.316371,
+      "FDP": 3.592838,
+      "AfD": 23.115508,
+      "Die Linke": 5.025499,
+      "FREIE WÄHLER": 2.787036,
+      "Volt": 1.050171,
+      "BÜNDNIS DEUTSCHLAND": 0.669917
+    }
+  },
+  "271": {
+    "winner": "GRÜNE",
+    "values": {
+      "CDU": 23.649884,
+      "SPD": 15.2619,
+      "GRÜNE": 30.643254,
+      "FDP": 3.821896,
+      "AfD": 13.728722,
+      "Die Linke": 7.975273,
+      "FREIE WÄHLER": 1.203488,
+      "Die PARTEI": 1.16168,
+      "Volt": 2.401601,
+      "MLPD": 0.152302
+    }
+  },
+  "272": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 39.157898,
+      "SPD": 14.963639,
+      "GRÜNE": 13.010293,
+      "FDP": 4.193916,
+      "AfD": 18.476687,
+      "Die Linke": 5.057302,
+      "FREIE WÄHLER": 2.625632,
+      "Die PARTEI": 1.192377,
+      "Volt": 1.322256
+    }
+  },
+  "273": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 38.850896,
+      "SPD": 15.123386,
+      "GRÜNE": 11.248515,
+      "FDP": 3.525241,
+      "AfD": 22.205876,
+      "Die Linke": 4.683085,
+      "dieBasis": 1.032273,
+      "FREIE WÄHLER": 3.330728
+    }
+  },
+  "274": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 29.161093,
+      "SPD": 15.893497,
+      "GRÜNE": 27.73864,
+      "FDP": 3.650261,
+      "AfD": 11.965434,
+      "Die Linke": 7.133841,
+      "FREIE WÄHLER": 1.384154,
+      "Die PARTEI": 1.225025,
+      "Volt": 1.753657,
+      "MLPD": 0.094399
+    }
+  },
+  "275": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 24.727325,
+      "SPD": 22.470231,
+      "GRÜNE": 18.096906,
+      "FDP": 4.206792,
+      "AfD": 17.884295,
+      "Die Linke": 7.975856,
+      "FREIE WÄHLER": 1.72853,
+      "Tierschutzpartei": 1.816075,
+      "Die PARTEI": 0.948519,
+      "MLPD": 0.14547
+    }
+  },
+  "276": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 42.848735,
+      "SPD": 14.134785,
+      "GRÜNE": 7.848146,
+      "FDP": 3.140671,
+      "AfD": 22.998823,
+      "Die Linke": 4.525603,
+      "dieBasis": 1.113596,
+      "FREIE WÄHLER": 3.389641
+    }
+  },
+  "277": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 34.42291,
+      "SPD": 20.360785,
+      "GRÜNE": 11.022348,
+      "FDP": 4.326098,
+      "AfD": 20.363247,
+      "Die Linke": 5.093581,
+      "FREIE WÄHLER": 2.925917,
+      "Volt": 1.485115
+    }
+  },
+  "278": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 36.14015,
+      "SPD": 16.327216,
+      "GRÜNE": 10.728301,
+      "FDP": 4.166071,
+      "AfD": 22.232103,
+      "Die Linke": 5.157992,
+      "FREIE WÄHLER": 3.528007,
+      "Volt": 1.72016
+    }
+  },
+  "279": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 37.064035,
+      "SPD": 21.055385,
+      "FDP": 5.453637,
+      "AfD": 26.893252,
+      "Die Linke": 6.407529,
+      "Volt": 3.126163
+    }
+  },
+  "280": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 39.03687,
+      "SPD": 12.896532,
+      "GRÜNE": 8.119674,
+      "FDP": 4.210384,
+      "AfD": 24.213709,
+      "Die Linke": 3.886508,
+      "FREIE WÄHLER": 3.578641,
+      "Tierschutzpartei": 1.493153,
+      "Volt": 0.939609,
+      "Bündnis C": 1.244397,
+      "BÜNDNIS DEUTSCHLAND": 0.380523
+    }
+  },
+  "281": {
+    "winner": "GRÜNE",
+    "values": {
+      "CDU": 24.54573,
+      "SPD": 15.65287,
+      "GRÜNE": 32.491284,
+      "FDP": 2.844996,
+      "AfD": 10.272998,
+      "Die Linke": 10.021411,
+      "FREIE WÄHLER": 1.321606,
+      "Die PARTEI": 0.945765,
+      "Volt": 1.781139,
+      "MLPD": 0.1222
+    }
+  },
+  "282": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 33.213678,
+      "SPD": 17.325843,
+      "GRÜNE": 15.688768,
+      "FDP": 3.117471,
+      "AfD": 17.625249,
+      "Die Linke": 6.076654,
+      "FREIE WÄHLER": 5.459062,
+      "Volt": 1.493274
+    }
+  },
+  "283": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 37.033925,
+      "SPD": 22.227874,
+      "GRÜNE": 10.133133,
+      "FDP": 3.148635,
+      "AfD": 18.953735,
+      "Die Linke": 4.701667,
+      "FREIE WÄHLER": 3.801031
+    }
+  },
+  "284": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 38.205614,
+      "SPD": 12.982519,
+      "GRÜNE": 12.324819,
+      "FDP": 4.456479,
+      "AfD": 20.706442,
+      "Die Linke": 5.411439,
+      "FREIE WÄHLER": 4.624364,
+      "Volt": 1.288323
+    }
+  },
+  "285": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 38.944991,
+      "SPD": 11.072528,
+      "GRÜNE": 7.796506,
+      "FDP": 5.455239,
+      "AfD": 27.530846,
+      "Die Linke": 4.471682,
+      "FREIE WÄHLER": 2.999474,
+      "Volt": 1.728733
+    }
+  },
+  "286": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 42.316149,
+      "SPD": 14.911053,
+      "GRÜNE": 7.671551,
+      "FDP": 3.477913,
+      "AfD": 22.40425,
+      "Die Linke": 4.070635,
+      "FREIE WÄHLER": 2.254801,
+      "Volt": 1.153154
+    }
+  },
+  "287": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 37.695637,
+      "SPD": 15.5985,
+      "GRÜNE": 14.972814,
+      "FDP": 4.342057,
+      "AfD": 17.44784,
+      "Die Linke": 5.889464,
+      "FREIE WÄHLER": 1.970231,
+      "Volt": 1.716655
+    }
+  },
+  "288": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 37.718223,
+      "SPD": 18.668329,
+      "GRÜNE": 11.640179,
+      "FDP": 3.579516,
+      "AfD": 18.496589,
+      "Die Linke": 4.735986,
+      "dieBasis": 0.950106,
+      "FREIE WÄHLER": 2.992279,
+      "Volt": 1.218794
+    }
+  },
+  "289": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 38.482479,
+      "SPD": 13.666094,
+      "GRÜNE": 12.708737,
+      "FDP": 5.55109,
+      "AfD": 19.779905,
+      "Die Linke": 5.552917,
+      "FREIE WÄHLER": 2.831269,
+      "Die PARTEI": 1.250898,
+      "MLPD": 0.176612
+    }
+  },
+  "290": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 31.723162,
+      "SPD": 12.951344,
+      "GRÜNE": 24.661876,
+      "FDP": 3.64993,
+      "AfD": 15.647567,
+      "Die Linke": 6.15202,
+      "FREIE WÄHLER": 2.258255,
+      "Die PARTEI": 0.974757,
+      "Volt": 1.055451
+    }
+  },
+  "291": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 38.788537,
+      "SPD": 13.359466,
+      "GRÜNE": 15.544019,
+      "FDP": 3.549105,
+      "AfD": 18.534802,
+      "Die Linke": 4.966098,
+      "FREIE WÄHLER": 2.012925,
+      "Tierschutzpartei": 1.569552,
+      "Volt": 0.910054,
+      "MLPD": 0.115478,
+      "BÜNDNIS DEUTSCHLAND": 0.649963
+    }
+  },
+  "292": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 40.868359,
+      "SPD": 12.699286,
+      "GRÜNE": 10.325966,
+      "FDP": 3.870756,
+      "AfD": 22.351441,
+      "Die Linke": 3.795501,
+      "FREIE WÄHLER": 3.231785,
+      "Tierschutzpartei": 1.673031,
+      "Volt": 1.183873
+    }
+  },
+  "293": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 40.032772,
+      "SPD": 15.251307,
+      "GRÜNE": 12.684427,
+      "FDP": 3.213286,
+      "AfD": 20.355905,
+      "Die Linke": 4.228374,
+      "FREIE WÄHLER": 2.454401,
+      "Volt": 1.619141,
+      "MLPD": 0.160387
+    }
+  },
+  "294": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 38.718937,
+      "SPD": 10.976808,
+      "GRÜNE": 15.226183,
+      "FDP": 5.707506,
+      "AfD": 18.599148,
+      "Die Linke": 6.257335,
+      "FREIE WÄHLER": 2.976859,
+      "Volt": 1.537225
+    }
+  },
+  "295": {
+    "winner": "CDU",
+    "values": {
+      "CDU": 37.13321,
+      "SPD": 19.631222,
+      "GRÜNE": 5.325126,
+      "FDP": 4.192569,
+      "AfD": 26.155487,
+      "Die Linke": 3.982635,
+      "FREIE WÄHLER": 2.62112,
+      "MLPD": 0.215369,
+      "BÜNDNIS DEUTSCHLAND": 0.743262
+    }
+  },
+  "296": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 32.384284,
+      "CDU": 24.752569,
+      "FDP": 3.59622,
+      "AfD": 20.622848,
+      "Die Linke": 8.462811,
+      "FREIE WÄHLER": 2.394317,
+      "MLPD": 0.376908,
+      "GRÜNE": 7.410044
+    }
+  },
+  "297": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 28.331445,
+      "CDU": 31.839007,
+      "FDP": 3.239076,
+      "AfD": 21.935194,
+      "Die Linke": 6.714001,
+      "FREIE WÄHLER": 3.183654,
+      "GRÜNE": 4.757624
+    }
+  },
+  "298": {
+    "winner": "CDU",
+    "values": {
+      "SPD": 28.592657,
+      "CDU": 33.876298,
+      "FDP": 3.793438,
+      "AfD": 20.547257,
+      "Die Linke": 5.754902,
+      "FREIE WÄHLER": 3.655456,
+      "GRÜNE": 3.779993
+    }
+  },
+  "299": {
+    "winner": "SPD",
+    "values": {
+      "SPD": 30.516194,
+      "CDU": 28.018437,
+      "FDP": 3.208662,
+      "AfD": 23.351665,
+      "Die Linke": 6.639911,
+      "FREIE WÄHLER": 3.828479,
+      "GRÜNE": 4.436652
+    }
+  }
+}

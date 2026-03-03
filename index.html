@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#tooltip {
+  position: absolute;
+  background: #1e1e1e;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  pointer-events: none;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  max-width: 220px;
+}
+</style>
+<meta charset="UTF-8">
+<title>Wahlkreis Karte 2025</title>
+<style>
+body { font-family: Arial; }
+svg path {
+  stroke: #fff;
+  stroke-width: 0.5;
+}
+</style>
+</head>
+<body>
+
+<h2>Bundestagswahl 2025 – Zweitstimme</h2>
+
+<button id="trendButton" onclick="toggleTrend()">Trend AN</button>
+
+<hr>
+
+<h3>Eigene Bundeswerte eingeben</h3>
+
+<div id="inputContainer">
+
+  CDU <input type="number" id="CDU_input" step="0.1"><br>
+  CSU <input type="number" id="CSU_input" step="0.1"><br>
+  AfD <input type="number" id="AfD_input" step="0.1"><br>
+  SPD <input type="number" id="SPD_input" step="0.1"><br>
+  GRÜNE <input type="number" id="GRUENE_input" step="0.1"><br>
+  Die Linke <input type="number" id="LINKE_input" step="0.1"><br>
+  FDP <input type="number" id="FDP_input" step="0.1"><br>
+  BSW <input type="number" id="BSW_input" step="0.1"><br><br>
+
+  <button onclick="applyCustomInput()">Berechnen</button>
+
+</div>
+
+<hr>
+
+<div id="seatResult"></div>
+
+<hr>
+
+<div id="map"></div>
+<div id="tooltip"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+<button id="trendButton" onclick="toggleTrend()">Trend AN</button>
+
+
+<h2>Bundestagswahl 2025 – Zweitstimme</h2>
+
+<div id="map"></div>
+<div id="tooltip"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
