@@ -1,7 +1,7 @@
 ﻿<div id="mapContainer"></div>
 
 <script>
-fetch("btw25_wahlkreise_svg.svg")
+fetch("assets/btw25_wahlkreise_svg.svg")
   .then(res => res.text())
   .then(svg => {
     document.getElementById("mapContainer").innerHTML = svg;
