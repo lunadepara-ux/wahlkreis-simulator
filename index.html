@@ -1,83 +1,447 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wahlkreis Karte 2025</title>
 
 <style>
-body { font-family: Arial; }
+  :root {
+    --bg: #0f1115;
+    --panel: #171a21;
+    --panel-2: #1d2230;
+    --border: #2a3142;
+    --text: #f1f5f9;
+    --muted: #9aa4b2;
+    --accent: #3b82f6;
+    --shadow: 0 10px 30px rgba(0,0,0,0.28);
+    --radius: 18px;
+  }
 
-svg path {
-  stroke: #fff;
-  stroke-width: 0.5;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-#tooltip {
-  position: absolute;
-  background: #1e1e1e;
-  color: white;
-  padding: 10px 14px;
-  border-radius: 6px;
-  font-size: 14px;
-  pointer-events: none;
-  display: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  max-width: 220px;
-}
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #0f1115 0%, #121722 100%);
+    color: var(--text);
+  }
 
-#parliament {
-  margin-top: 20px;
-}
+  .app {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    min-height: 100vh;
+  }
 
-#coalition button {
-  margin: 4px;
-  border: none;
-  padding: 6px 10px;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-}
+  .sidebar {
+    border-right: 1px solid var(--border);
+    background: rgba(10,12,18,0.82);
+    backdrop-filter: blur(8px);
+    padding: 24px 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .brand {
+    margin-bottom: 22px;
+  }
+
+  .brand h1 {
+    margin: 0 0 6px;
+    font-size: 26px;
+    line-height: 1.1;
+  }
+
+  .brand p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .section {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+  }
+
+  .section h2,
+  .section h3 {
+    margin: 0 0 12px;
+    font-size: 17px;
+  }
+
+  .section-sub {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: -4px;
+    margin-bottom: 14px;
+  }
+
+  .input-grid {
+    display: grid;
+    grid-template-columns: 1fr 110px;
+    gap: 10px 12px;
+    align-items: center;
+  }
+
+  .input-grid label {
+    font-size: 14px;
+    color: var(--text);
+  }
+
+  .input-grid input {
+    width: 100%;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    outline: none;
+  }
+
+  .input-grid input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.18);
+  }
+
+  .button-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+
+  button {
+    appearance: none;
+    border: 0;
+    border-radius: 12px;
+    padding: 10px 14px;
+    background: var(--accent);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.12s ease, opacity 0.12s ease;
+  }
+
+  button:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+  }
+
+  button.secondary {
+    background: #334155;
+  }
+
+  .main {
+    padding: 24px;
+  }
+
+  .topbar {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .topbar h2 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .topbar p {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr;
+    gap: 18px;
+    align-items: start;
+  }
+
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .panel-header {
+    padding: 16px 18px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(255,255,255,0.02);
+  }
+
+  .panel-header h3 {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  .panel-header p {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .panel-body {
+    padding: 16px 18px;
+  }
+
+  #map {
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    background:
+      radial-gradient(circle at top left, rgba(59,130,246,0.08), transparent 35%),
+      radial-gradient(circle at bottom right, rgba(168,85,247,0.08), transparent 35%);
+  }
+
+  #map svg {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+  }
+
+  svg path {
+    stroke: #ffffff;
+    stroke-width: 0.45;
+    transition: opacity 0.12s ease, transform 0.12s ease;
+  }
+
+  svg path:hover {
+    opacity: 0.9;
+  }
+
+  .stack {
+    display: grid;
+    gap: 18px;
+  }
+
+  #seatResult {
+    line-height: 1.65;
+    font-size: 14px;
+  }
+
+  #parliament {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    border-radius: 14px;
+  }
+
+  #coalition {
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  #tooltip {
+    position: absolute;
+    background: #111827;
+    color: white;
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-size: 13px;
+    pointer-events: none;
+    display: none;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.08);
+    max-width: 260px;
+    z-index: 50;
+  }
+
+  .legend {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 8px 14px;
+    font-size: 13px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+  }
+
+  .swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    flex: 0 0 12px;
+  }
+
+  .footer-note {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 1200px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+
+    #map {
+      min-height: 560px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .app {
+      grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+      position: static;
+      height: auto;
+      border-right: 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .main {
+      padding: 16px;
+    }
+
+    .topbar h2 {
+      font-size: 22px;
+    }
+  }
 </style>
-
 </head>
 <body>
 
-<h2>Bundestagswahl 2025 – Zweitstimme</h2>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <h1>Wahlstudio 2025</h1>
+      <p>Wahlkreise, Prognosen, Sitzverteilung und Koalitionen.</p>
+    </div>
 
-<hr>
+    <div class="section">
+      <h2>Bundeswerte eingeben</h2>
+      <div class="section-sub">Zweitstimmen-Prognose für die Sitzverteilung und die Simulation.</div>
 
-<h3>Eigene Bundeswerte eingeben</h3>
+      <div id="inputContainer" class="input-grid">
+        <label for="CDU_input">CDU</label>
+        <input type="number" id="CDU_input" step="0.1">
 
-<div id="inputContainer">
-  CDU <input type="number" id="CDU_input" step="0.1"><br>
-  CSU <input type="number" id="CSU_input" step="0.1"><br>
-  AfD <input type="number" id="AfD_input" step="0.1"><br>
-  SPD <input type="number" id="SPD_input" step="0.1"><br>
-  GRÜNE <input type="number" id="GRUENE_input" step="0.1"><br>
-  Die Linke <input type="number" id="LINKE_input" step="0.1"><br>
-  FDP <input type="number" id="FDP_input" step="0.1"><br>
-  BSW <input type="number" id="BSW_input" step="0.1"><br><br>
+        <label for="CSU_input">CSU</label>
+        <input type="number" id="CSU_input" step="0.1">
 
-  <button onclick="applyCustomInput()">Berechnen</button>
+        <label for="AfD_input">AfD</label>
+        <input type="number" id="AfD_input" step="0.1">
+
+        <label for="SPD_input">SPD</label>
+        <input type="number" id="SPD_input" step="0.1">
+
+        <label for="GRUENE_input">GRÜNE</label>
+        <input type="number" id="GRUENE_input" step="0.1">
+
+        <label for="LINKE_input">Die Linke</label>
+        <input type="number" id="LINKE_input" step="0.1">
+
+        <label for="FDP_input">FDP</label>
+        <input type="number" id="FDP_input" step="0.1">
+
+        <label for="BSW_input">BSW</label>
+        <input type="number" id="BSW_input" step="0.1">
+      </div>
+
+      <div class="button-row">
+        <button onclick="applyCustomInput()">Berechnen</button>
+      </div>
+
+      <div class="footer-note">
+        Die Karte zeigt Direktmandate nach Erststimme. Die Sitzverteilung nutzt die Zweitstimme mit Grundmandatsklausel.
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Legende</h3>
+      <div class="legend">
+        <div class="legend-item"><span class="swatch" style="background:#151518"></span>Union</div>
+        <div class="legend-item"><span class="swatch" style="background:#e3000f"></span>SPD</div>
+        <div class="legend-item"><span class="swatch" style="background:#409a3c"></span>GRÜNE</div>
+        <div class="legend-item"><span class="swatch" style="background:#ffed00"></span>FDP</div>
+        <div class="legend-item"><span class="swatch" style="background:#00a2de"></span>AfD</div>
+        <div class="legend-item"><span class="swatch" style="background:#be3075"></span>Die Linke</div>
+        <div class="legend-item"><span class="swatch" style="background:#792351"></span>BSW</div>
+        <div class="legend-item"><span class="swatch" style="background:#003366"></span>SSW</div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <h2>Bundestagswahl 2025</h2>
+        <p>Wahlkreis-Karte, Sitzprojektion und automatische Koalitionsvorschläge.</p>
+      </div>
+    </div>
+
+    <div class="content-grid">
+      <section class="panel">
+        <div class="panel-header">
+          <h3>Wahlkreiskarte</h3>
+          <p>Färbung nach Erststimme. Hover zeigt Erst- und Zweitstimme.</p>
+        </div>
+        <div class="panel-body" id="map"></div>
+      </section>
+
+      <div class="stack">
+        <section class="panel">
+          <div class="panel-header">
+            <h3>Sitzverteilung</h3>
+            <p>630 Sitze, Union zusammengelegt.</p>
+          </div>
+          <div class="panel-body">
+            <div id="seatResult"></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h3>Bundestag</h3>
+            <p>Halbkreis-Visualisierung der Sitze.</p>
+          </div>
+          <div class="panel-body">
+            <svg id="parliament" width="800" height="400"></svg>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h3>Koalitionsrechner</h3>
+            <p>Automatische Mehrheitsoptionen ab 316 Sitzen.</p>
+          </div>
+          <div class="panel-body">
+            <div id="coalition"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
 </div>
 
-<hr>
-
-<div id="seatResult"></div>
-
-<h3>Bundestag (630 Sitze)</h3>
-<svg id="parliament" width="800" height="400"></svg>
-
-<h3>Koalitionsrechner</h3>
-<div id="coalition"></div>
-
-<hr>
-
-<div id="map"></div>
 <div id="tooltip"></div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
-
