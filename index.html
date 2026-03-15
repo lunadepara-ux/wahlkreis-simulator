@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wahlstudio 2025</title>
+<title>Projektionssimulator</title>
 
 <style>
   :root {
@@ -17,7 +17,7 @@
     --shadow: 0 10px 30px rgba(0,0,0,0.28);
     --radius: 18px;
 
-    --union: #2c3548;
+    --union: #3a455c;
     --spd: #e3000f;
     --gruene: #409a3c;
     --fdp: #ffed00;
@@ -42,13 +42,14 @@
     display: grid;
     grid-template-columns: 390px 1fr;
     min-height: 100vh;
+    position: relative;
   }
 
   .sidebar {
     border-right: 1px solid var(--border);
     background: rgba(10,12,18,0.88);
     backdrop-filter: blur(8px);
-    padding: 24px 20px;
+    padding: 24px 20px 60px;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -61,7 +62,13 @@
 
   .brand h1 {
     margin: 0 0 6px;
-    font-size: 28px;
+    font-size: 30px;
+    line-height: 1.05;
+    background: linear-gradient(90deg, #111111 0%, #d10000 18%, #ffcc00 50%, #111111 82%, #d10000 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
   }
 
   .brand p {
@@ -93,7 +100,9 @@
     line-height: 1.45;
   }
 
-  .party-grid {
+  .party-grid,
+  .modifier-grid,
+  .meta-grid {
     display: grid;
     grid-template-columns: 1fr 110px;
     gap: 10px 12px;
@@ -117,7 +126,8 @@
 
   .party-grid input,
   .modifier-grid select,
-  .modifier-grid input {
+  .modifier-grid input,
+  .meta-grid select {
     width: 100%;
     background: var(--panel-2);
     border: 1px solid var(--border);
@@ -130,16 +140,10 @@
 
   .party-grid input:focus,
   .modifier-grid select:focus,
-  .modifier-grid input:focus {
+  .modifier-grid input:focus,
+  .meta-grid select:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(59,130,246,0.18);
-  }
-
-  .modifier-grid {
-    display: grid;
-    grid-template-columns: 1fr 110px;
-    gap: 10px 12px;
-    align-items: center;
   }
 
   .button-row {
@@ -171,7 +175,7 @@
   }
 
   .main {
-    padding: 24px;
+    padding: 24px 24px 60px;
   }
 
   .topbar {
@@ -295,7 +299,7 @@
     display: none;
     box-shadow: 0 16px 44px rgba(0,0,0,0.42);
     border: 1px solid rgba(255,255,255,0.08);
-    max-width: 300px;
+    max-width: 320px;
     z-index: 50;
     line-height: 1.55;
   }
@@ -352,35 +356,33 @@
     line-height: 1.5;
   }
 
-  @media (max-width: 1200px) {
-    .content-grid {
-      grid-template-columns: 1fr;
-    }
+  .corner-left,
+  .corner-right {
+    position: fixed;
+    bottom: 12px;
+    font-size: 12px;
+    color: var(--muted);
+    z-index: 100;
+  }
 
-    #map {
-      min-height: 560px;
-    }
+  .corner-left { left: 14px; }
+  .corner-right { right: 14px; }
+
+  @media (max-width: 1200px) {
+    .content-grid { grid-template-columns: 1fr; }
+    #map { min-height: 560px; }
   }
 
   @media (max-width: 900px) {
-    .app {
-      grid-template-columns: 1fr;
-    }
-
+    .app { grid-template-columns: 1fr; }
     .sidebar {
       position: static;
       height: auto;
       border-right: 0;
       border-bottom: 1px solid var(--border);
     }
-
-    .main {
-      padding: 16px;
-    }
-
-    .topbar h2 {
-      font-size: 22px;
-    }
+    .main { padding: 16px 16px 60px; }
+    .topbar h2 { font-size: 22px; }
   }
 </style>
 </head>
@@ -389,13 +391,35 @@
 <div class="app">
   <aside class="sidebar">
     <div class="brand">
-      <h1>Wahlstudio 2025</h1>
-      <p>Wahlkreise, Prognosen, Sitzverteilung und Koalitionen.</p>
+      <h1 id="appTitle">Projektionssimulator</h1>
+      <p id="appSubtitle">Wahlkreise, Prognosen, Sitzverteilung und Koalitionen.</p>
     </div>
 
     <div class="section">
-      <h2>Bundeswerte eingeben</h2>
-      <div class="section-sub">Zweitstimmen-Prognose für die Sitzverteilung und regionale Simulation.</div>
+      <h2 id="metaTitle">Projekt</h2>
+      <div class="meta-grid">
+        <label for="languageSelect" id="languageLabel">Sprache</label>
+        <select id="languageSelect">
+          <option value="de" selected>Deutsch</option>
+          <option value="pl">Polski</option>
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
+        </select>
+
+        <label for="countrySelect" id="countryLabel">Land</label>
+        <select id="countrySelect">
+          <option value="de" selected>Deutschland</option>
+          <option value="soon1">Coming soon</option>
+          <option value="soon2">Coming soon</option>
+          <option value="soon3">Coming soon</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 id="inputTitle">Bundeswerte eingeben</h2>
+      <div class="section-sub" id="inputSubtitle">Zweitstimmen-Prognose für die Sitzverteilung und regionale Simulation.</div>
 
       <div id="inputContainer" class="party-grid">
         <label class="party-label" for="UNION_input"><img class="party-logo-img" src="assets/logos/Union.png" alt="Union">Union</label>
@@ -429,10 +453,10 @@
         <input type="number" id="SSW_input" step="0.1" value="0.2">
       </div>
 
-      <div class="section-sub" style="margin-top:16px;margin-bottom:12px;">Regionale Verstärkung</div>
+      <div class="section-sub" style="margin-top:16px;margin-bottom:12px;" id="regionalTitle">Regionale Verstärkung</div>
 
       <div class="modifier-grid">
-        <label for="eastBoostParty">Osten stärkt</label>
+        <label for="eastBoostParty" id="eastPartyLabel">Osten stärkt</label>
         <select id="eastBoostParty">
           <option value="">Keine</option>
           <option value="AfD" selected>AfD</option>
@@ -443,10 +467,10 @@
           <option value="BSW">BSW</option>
         </select>
 
-        <label for="eastBoostValue">Ost +%</label>
+        <label for="eastBoostValue" id="eastValueLabel">Ost +%</label>
         <input type="number" id="eastBoostValue" step="0.1" value="2.0">
 
-        <label for="westBoostParty">Westen stärkt</label>
+        <label for="westBoostParty" id="westPartyLabel">Westen stärkt</label>
         <select id="westBoostParty">
           <option value="">Keine</option>
           <option value="Union" selected>Union</option>
@@ -455,10 +479,10 @@
           <option value="FDP">FDP</option>
         </select>
 
-        <label for="westBoostValue">West +%</label>
+        <label for="westBoostValue" id="westValueLabel">West +%</label>
         <input type="number" id="westBoostValue" step="0.1" value="1.0">
 
-        <label for="urbanBoostParty">Stadt stärkt</label>
+        <label for="urbanBoostParty" id="urbanPartyLabel">Stadt stärkt</label>
         <select id="urbanBoostParty">
           <option value="">Keine</option>
           <option value="GRÜNE" selected>GRÜNE</option>
@@ -467,10 +491,10 @@
           <option value="Volt">Volt</option>
         </select>
 
-        <label for="urbanBoostValue">Stadt +%</label>
+        <label for="urbanBoostValue" id="urbanValueLabel">Stadt +%</label>
         <input type="number" id="urbanBoostValue" step="0.1" value="2.0">
 
-        <label for="ruralBoostParty">Land stärkt</label>
+        <label for="ruralBoostParty" id="ruralPartyLabel">Land stärkt</label>
         <select id="ruralBoostParty">
           <option value="">Keine</option>
           <option value="Union" selected>Union</option>
@@ -479,22 +503,22 @@
           <option value="SPD">SPD</option>
         </select>
 
-        <label for="ruralBoostValue">Land +%</label>
+        <label for="ruralBoostValue" id="ruralValueLabel">Land +%</label>
         <input type="number" id="ruralBoostValue" step="0.1" value="1.5">
       </div>
 
       <div class="button-row">
-        <button onclick="applyCustomInput()">Berechnen</button>
-        <button class="secondary" onclick="resetInputs()">Reset 2025</button>
+        <button onclick="applyCustomInput()" id="calcButton">Berechnen</button>
+        <button class="secondary" onclick="resetInputs()" id="resetButton">Reset 2025</button>
       </div>
 
-      <div class="footer-note">
+      <div class="footer-note" id="inputNote">
         Karte = Erststimme. Sitzverteilung = Zweitstimme. Grundmandatsklausel aktiv. Union wird als eine Fraktion behandelt.
       </div>
     </div>
 
     <div class="section">
-      <h3>Legende</h3>
+      <h3 id="legendTitle">Legende</h3>
       <div class="legend">
         <div class="legend-item"><span class="swatch" style="background:var(--union)"></span>Union</div>
         <div class="legend-item"><span class="swatch" style="background:var(--spd)"></span>SPD</div>
@@ -513,16 +537,16 @@
   <main class="main">
     <div class="topbar">
       <div>
-        <h2>Bundestagswahl 2025</h2>
-        <p>Wahlkreis-Karte, Sitzprojektion und automatische Koalitionsvorschläge.</p>
+        <h2 id="mainTitle">Bundestagswahl 2025</h2>
+        <p id="mainSubtitle">Wahlkreis-Karte, Sitzprojektion und automatische Koalitionsvorschläge.</p>
       </div>
     </div>
 
     <div class="content-grid">
       <section class="panel">
         <div class="panel-header">
-          <h3>Wahlkreiskarte</h3>
-          <p>Färbung nach Erststimme. Hover zeigt Erst- und Zweitstimme.</p>
+          <h3 id="mapTitle">Wahlkreiskarte</h3>
+          <p id="mapSubtitle">Färbung nach Erststimme. Hover zeigt Erst- und Zweitstimme.</p>
         </div>
         <div class="panel-body" id="map"></div>
       </section>
@@ -530,8 +554,8 @@
       <div class="stack">
         <section class="panel">
           <div class="panel-header">
-            <h3>Sitzverteilung</h3>
-            <p>630 Sitze, Union zusammengelegt.</p>
+            <h3 id="seatsTitle">Sitzverteilung</h3>
+            <p id="seatsSubtitle">630 Sitze, Union zusammengelegt.</p>
           </div>
           <div class="panel-body">
             <div id="seatResult"></div>
@@ -540,8 +564,8 @@
 
         <section class="panel">
           <div class="panel-header">
-            <h3>Bundestag</h3>
-            <p>Halbkreis-Visualisierung der Sitze.</p>
+            <h3 id="parliamentTitle">Bundestag</h3>
+            <p id="parliamentSubtitle">Halbkreis-Visualisierung der Sitze.</p>
           </div>
           <div class="panel-body">
             <svg id="parliament" width="800" height="400"></svg>
@@ -550,8 +574,8 @@
 
         <section class="panel">
           <div class="panel-header">
-            <h3>Koalitionsrechner</h3>
-            <p>Automatische Mehrheitsoptionen ab 316 Sitzen.</p>
+            <h3 id="coalitionTitle">Koalitionsrechner</h3>
+            <p id="coalitionSubtitle">Automatische Mehrheitsoptionen ab 316 Sitzen.</p>
           </div>
           <div class="panel-body">
             <div id="coalition"></div>
@@ -563,6 +587,8 @@
 </div>
 
 <div id="tooltip"></div>
+<div class="corner-left">V.1.0</div>
+<div class="corner-right">Made by luna290509 - 2026</div>
 
 <script src="script.js"></script>
 </body>
