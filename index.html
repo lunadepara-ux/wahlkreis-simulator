@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wahlkreis Karte 2025</title>
+<title>Wahlstudio 2025</title>
 
 <style>
   :root {
@@ -16,11 +16,20 @@
     --accent: #3b82f6;
     --shadow: 0 10px 30px rgba(0,0,0,0.28);
     --radius: 18px;
+
+    --union: #2c3548;
+    --spd: #e3000f;
+    --gruene: #409a3c;
+    --fdp: #ffed00;
+    --afd: #00a2de;
+    --linke: #be3075;
+    --bsw: #792351;
+    --ssw: #003366;
+    --volt: #582c83;
+    --fw: #f08c00;
   }
 
-  * {
-    box-sizing: border-box;
-  }
+  * { box-sizing: border-box; }
 
   body {
     margin: 0;
@@ -31,13 +40,13 @@
 
   .app {
     display: grid;
-    grid-template-columns: 360px 1fr;
+    grid-template-columns: 390px 1fr;
     min-height: 100vh;
   }
 
   .sidebar {
     border-right: 1px solid var(--border);
-    background: rgba(10,12,18,0.82);
+    background: rgba(10,12,18,0.88);
     backdrop-filter: blur(8px);
     padding: 24px 20px;
     position: sticky;
@@ -47,19 +56,19 @@
   }
 
   .brand {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   .brand h1 {
     margin: 0 0 6px;
-    font-size: 26px;
-    line-height: 1.1;
+    font-size: 28px;
   }
 
   .brand p {
     margin: 0;
     color: var(--muted);
     font-size: 14px;
+    line-height: 1.4;
   }
 
   .section {
@@ -74,29 +83,42 @@
   .section h2,
   .section h3 {
     margin: 0 0 12px;
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .section-sub {
     color: var(--muted);
     font-size: 13px;
-    margin-top: -4px;
-    margin-bottom: 14px;
+    margin: -4px 0 14px;
+    line-height: 1.45;
   }
 
-  .input-grid {
+  .party-grid {
     display: grid;
     grid-template-columns: 1fr 110px;
     gap: 10px 12px;
     align-items: center;
   }
 
-  .input-grid label {
+  .party-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 14px;
-    color: var(--text);
   }
 
-  .input-grid input {
+  .party-logo {
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    display: inline-block;
+    flex: 0 0 18px;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .party-grid input,
+  .modifier-grid select,
+  .modifier-grid input {
     width: 100%;
     background: var(--panel-2);
     border: 1px solid var(--border);
@@ -107,9 +129,18 @@
     outline: none;
   }
 
-  .input-grid input:focus {
+  .party-grid input:focus,
+  .modifier-grid select:focus,
+  .modifier-grid input:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(59,130,246,0.18);
+  }
+
+  .modifier-grid {
+    display: grid;
+    grid-template-columns: 1fr 110px;
+    gap: 10px 12px;
+    align-items: center;
   }
 
   .button-row {
@@ -219,11 +250,11 @@
   svg path {
     stroke: #ffffff;
     stroke-width: 0.45;
-    transition: opacity 0.12s ease, transform 0.12s ease;
+    transition: opacity 0.12s ease, filter 0.12s ease;
   }
 
   svg path:hover {
-    opacity: 0.9;
+    filter: brightness(1.08);
   }
 
   .stack {
@@ -231,9 +262,18 @@
     gap: 18px;
   }
 
-  #seatResult {
-    line-height: 1.65;
+  #seatResult,
+  #coalition {
+    line-height: 1.7;
     font-size: 14px;
+  }
+
+  .seat-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 4px 0;
+    font-weight: 700;
   }
 
   #parliament {
@@ -245,24 +285,44 @@
     border-radius: 14px;
   }
 
-  #coalition {
-    line-height: 1.7;
-    font-size: 14px;
-  }
-
   #tooltip {
     position: absolute;
-    background: #111827;
+    background: linear-gradient(180deg, rgba(24,30,43,0.98), rgba(12,16,24,0.98));
     color: white;
-    padding: 12px 14px;
-    border-radius: 12px;
+    padding: 14px 16px;
+    border-radius: 14px;
     font-size: 13px;
     pointer-events: none;
     display: none;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+    box-shadow: 0 16px 44px rgba(0,0,0,0.42);
     border: 1px solid rgba(255,255,255,0.08);
-    max-width: 260px;
+    max-width: 300px;
     z-index: 50;
+    line-height: 1.55;
+  }
+
+  .tooltip-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .tooltip-block {
+    margin-top: 10px;
+  }
+
+  .tooltip-block-title {
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+
+  .tooltip-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
   }
 
   .legend {
@@ -336,54 +396,117 @@
 
     <div class="section">
       <h2>Bundeswerte eingeben</h2>
-      <div class="section-sub">Zweitstimmen-Prognose für die Sitzverteilung und die Simulation.</div>
+      <div class="section-sub">Zweitstimmen-Prognose für die Sitzverteilung und regionale Simulation.</div>
 
-      <div id="inputContainer" class="input-grid">
-        <label for="CDU_input">CDU</label>
-        <input type="number" id="CDU_input" step="0.1">
+      <div id="inputContainer" class="party-grid">
+        <label class="party-label" for="UNION_input"><span class="party-logo" style="background:var(--union)"></span>Union</label>
+        <input type="number" id="UNION_input" step="0.1" value="28.5">
 
-        <label for="CSU_input">CSU</label>
-        <input type="number" id="CSU_input" step="0.1">
+        <label class="party-label" for="AfD_input"><span class="party-logo" style="background:var(--afd)"></span>AfD</label>
+        <input type="number" id="AfD_input" step="0.1" value="20.8">
 
-        <label for="AfD_input">AfD</label>
-        <input type="number" id="AfD_input" step="0.1">
+        <label class="party-label" for="SPD_input"><span class="party-logo" style="background:var(--spd)"></span>SPD</label>
+        <input type="number" id="SPD_input" step="0.1" value="16.4">
 
-        <label for="SPD_input">SPD</label>
-        <input type="number" id="SPD_input" step="0.1">
+        <label class="party-label" for="GRUENE_input"><span class="party-logo" style="background:var(--gruene)"></span>GRÜNE</label>
+        <input type="number" id="GRUENE_input" step="0.1" value="13.9">
 
-        <label for="GRUENE_input">GRÜNE</label>
-        <input type="number" id="GRUENE_input" step="0.1">
+        <label class="party-label" for="LINKE_input"><span class="party-logo" style="background:var(--linke)"></span>Die Linke</label>
+        <input type="number" id="LINKE_input" step="0.1" value="8.6">
 
-        <label for="LINKE_input">Die Linke</label>
-        <input type="number" id="LINKE_input" step="0.1">
+        <label class="party-label" for="FDP_input"><span class="party-logo" style="background:var(--fdp)"></span>FDP</label>
+        <input type="number" id="FDP_input" step="0.1" value="4.3">
 
-        <label for="FDP_input">FDP</label>
-        <input type="number" id="FDP_input" step="0.1">
+        <label class="party-label" for="BSW_input"><span class="party-logo" style="background:var(--bsw)"></span>BSW</label>
+        <input type="number" id="BSW_input" step="0.1" value="5.0">
 
-        <label for="BSW_input">BSW</label>
-        <input type="number" id="BSW_input" step="0.1">
+        <label class="party-label" for="FW_input"><span class="party-logo" style="background:var(--fw)"></span>FW</label>
+        <input type="number" id="FW_input" step="0.1" value="1.5">
+
+        <label class="party-label" for="Volt_input"><span class="party-logo" style="background:var(--volt)"></span>Volt</label>
+        <input type="number" id="Volt_input" step="0.1" value="1.2">
+
+        <label class="party-label" for="SSW_input"><span class="party-logo" style="background:var(--ssw)"></span>SSW</label>
+        <input type="number" id="SSW_input" step="0.1" value="0.2">
+      </div>
+
+      <div class="section-sub" style="margin-top:16px;margin-bottom:12px;">Regionale Verstärkung</div>
+
+      <div class="modifier-grid">
+        <label for="eastBoostParty">Osten stärkt</label>
+        <select id="eastBoostParty">
+          <option value="">Keine</option>
+          <option value="AfD" selected>AfD</option>
+          <option value="Die Linke">Die Linke</option>
+          <option value="SPD">SPD</option>
+          <option value="Union">Union</option>
+          <option value="GRÜNE">GRÜNE</option>
+          <option value="BSW">BSW</option>
+        </select>
+
+        <label for="eastBoostValue">Ost +%</label>
+        <input type="number" id="eastBoostValue" step="0.1" value="2.0">
+
+        <label for="westBoostParty">Westen stärkt</label>
+        <select id="westBoostParty">
+          <option value="">Keine</option>
+          <option value="Union" selected>Union</option>
+          <option value="SPD">SPD</option>
+          <option value="GRÜNE">GRÜNE</option>
+          <option value="FDP">FDP</option>
+        </select>
+
+        <label for="westBoostValue">West +%</label>
+        <input type="number" id="westBoostValue" step="0.1" value="1.0">
+
+        <label for="urbanBoostParty">Stadt stärkt</label>
+        <select id="urbanBoostParty">
+          <option value="">Keine</option>
+          <option value="GRÜNE" selected>GRÜNE</option>
+          <option value="SPD">SPD</option>
+          <option value="Die Linke">Die Linke</option>
+          <option value="Volt">Volt</option>
+        </select>
+
+        <label for="urbanBoostValue">Stadt +%</label>
+        <input type="number" id="urbanBoostValue" step="0.1" value="2.0">
+
+        <label for="ruralBoostParty">Land stärkt</label>
+        <select id="ruralBoostParty">
+          <option value="">Keine</option>
+          <option value="Union" selected>Union</option>
+          <option value="AfD">AfD</option>
+          <option value="FW">FW</option>
+          <option value="SPD">SPD</option>
+        </select>
+
+        <label for="ruralBoostValue">Land +%</label>
+        <input type="number" id="ruralBoostValue" step="0.1" value="1.5">
       </div>
 
       <div class="button-row">
         <button onclick="applyCustomInput()">Berechnen</button>
+        <button class="secondary" onclick="resetInputs()">Reset 2025</button>
       </div>
 
       <div class="footer-note">
-        Die Karte zeigt Direktmandate nach Erststimme. Die Sitzverteilung nutzt die Zweitstimme mit Grundmandatsklausel.
+        Karte = Erststimme. Sitzverteilung = Zweitstimme. Grundmandatsklausel aktiv. Union wird als eine Fraktion behandelt.
       </div>
     </div>
 
     <div class="section">
       <h3>Legende</h3>
       <div class="legend">
-        <div class="legend-item"><span class="swatch" style="background:#151518"></span>Union</div>
-        <div class="legend-item"><span class="swatch" style="background:#e3000f"></span>SPD</div>
-        <div class="legend-item"><span class="swatch" style="background:#409a3c"></span>GRÜNE</div>
-        <div class="legend-item"><span class="swatch" style="background:#ffed00"></span>FDP</div>
-        <div class="legend-item"><span class="swatch" style="background:#00a2de"></span>AfD</div>
-        <div class="legend-item"><span class="swatch" style="background:#be3075"></span>Die Linke</div>
-        <div class="legend-item"><span class="swatch" style="background:#792351"></span>BSW</div>
-        <div class="legend-item"><span class="swatch" style="background:#003366"></span>SSW</div>
+        <div class="legend-item"><span class="swatch" style="background:var(--union)"></span>Union</div>
+        <div class="legend-item"><span class="swatch" style="background:var(--spd)"></span>SPD</div>
+        <div class="legend-item"><span class="swatch" style="background:var(--gruene)"></span>GRÜNE</div>
+        <div class="legend-item"><span class="swatch" style="background:var(--fdp)"></span>FDP</div>
+        <div class="legend-item"><span class="swatch" style="background:var(--afd)"></span>AfD</div>
+        <div class="legend-item"><span class="swatch" style="background:var(--linke)"></span>Die Linke</div>
+        <div class="legend-item"><span class="swatch" style="background:var(--bsw)"></span>BSW</div>
+        <div class="legend-item"><span class="swatch" style="background:var(--fw)"></span>FW</div>
+        <div class="legend-item"><span class="swatch" style="background:var(--volt)"></span>Volt</div>
+        <div class="legend-item"><span class="swatch" style="background:var(--ssw)"></span>SSW</div>
       </div>
     </div>
   </aside>
