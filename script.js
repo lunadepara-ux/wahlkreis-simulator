@@ -5,9 +5,9 @@ const TOTAL_SEATS = 630;
 const MAJORITY = 316;
 
 const colorMap = {
-  "Union": "#2c3548",
-  "CDU": "#2c3548",
-  "CSU": "#2c3548",
+  "Union": "#3a455c",
+  "CDU": "#3a455c",
+  "CSU": "#3a455c",
   "SPD": "#e3000f",
   "GRÜNE": "#409a3c",
   "FDP": "#ffed00",
@@ -20,17 +20,30 @@ const colorMap = {
   "FREIE WÄHLER": "#f08c00"
 };
 
+const logoMap = {
+  "Union": "assets/logos/Union.png",
+  "AfD": "assets/logos/AfD.png",
+  "SPD": "assets/logos/SPD.png",
+  "GRÜNE": "assets/logos/Gruene.png",
+  "Die Linke": "assets/logos/Linke.png",
+  "FDP": "assets/logos/FDP.png",
+  "BSW": "assets/logos/BSW.png",
+  "FW": "assets/logos/fw.png",
+  "Volt": "assets/logos/Volt.png",
+  "SSW": "assets/logos/ssw.png"
+};
+
 const DEFAULTS_2025 = {
   "Union": 28.5,
   "AfD": 20.8,
   "SPD": 16.4,
-  "GRÜNE": 13.9,
-  "Die Linke": 8.6,
+  "GRÜNE": 11.6,
+  "Die Linke": 8.8,
   "FDP": 4.3,
-  "BSW": 5.0,
+  "BSW": 4.98,
   "FW": 1.5,
   "Volt": 1.2,
-  "SSW": 0.2
+  "SSW": 0.1
 };
 
 async function loadMap() {
@@ -41,7 +54,7 @@ async function loadMap() {
 
   normalizeData();
   colorMapByErststimme();
-  displaySeatResult({});
+  displaySeatResult({}, {}, {});
   drawParliament({});
   buildCoalitions({});
 }
@@ -50,25 +63,26 @@ function normalizeData() {
   Object.keys(data).forEach(wkNr => {
     const wk = data[wkNr];
 
+    // Fallback für alte Struktur
     if (!wk.erst && wk.values) wk.erst = { ...wk.values };
     if (!wk.zweit && wk.values) wk.zweit = { ...wk.values };
 
     if (!wk.erst) wk.erst = {};
     if (!wk.zweit) wk.zweit = {};
 
-    // CDU/CSU lokal als Union behandeln
-    wk.erst = mergeUnion(wk.erst);
-    wk.zweit = mergeUnion(wk.zweit);
+    wk.erst = normalizePartyNames(wk.erst);
+    wk.zweit = normalizePartyNames(wk.zweit);
+
+    if (!wk.name) wk.name = `Wahlkreis ${wkNr}`;
   });
 }
 
-function mergeUnion(values) {
+function normalizePartyNames(values) {
   const copy = { ...values };
 
   let unionValue = 0;
   if (copy["CDU"] !== undefined) unionValue += copy["CDU"];
   if (copy["CSU"] !== undefined) unionValue += copy["CSU"];
-
   if (unionValue > 0) {
     copy["Union"] = unionValue;
     delete copy["CDU"];
@@ -143,13 +157,15 @@ function classifyRegion(wkNr) {
   const n = parseInt(wkNr, 10);
 
   const eastSet = new Set([
-    ...Array.from({ length: 6 }, (_, i) => 12 + i),   // grob Brandenburg/MV etc
+    ...Array.from({ length: 6 }, (_, i) => 12 + i),
     ...Array.from({ length: 18 }, (_, i) => 56 + i),
     ...Array.from({ length: 12 }, (_, i) => 74 + i)
   ]);
 
   const urbanSet = new Set([
-    11,18,19,20,21,22,23,74,75,80,81,82,83,92,93,94
+    11, 18, 19, 20, 21, 22, 23,
+    74, 75, 80, 81, 82, 83,
+    92, 93, 94
   ]);
 
   return {
@@ -220,7 +236,6 @@ function colorMapByErststimme(source = null) {
     if (!wk) return;
 
     const erst = wk.erst || {};
-    const zweit = wk.zweit || {};
     const winner = getWinner(erst);
 
     path.style.fill = colorMap[winner] || "#ccc";
@@ -228,37 +243,76 @@ function colorMapByErststimme(source = null) {
 
     path.onmousemove = (e) => {
       const current = source ? source[wkNr] : data[wkNr];
-      const currentErst = current.erst || {};
-      const currentZweit = current.zweit || {};
-
-      let html = `<div class="tooltip-title">${current.name || `Wahlkreis ${wkNr}`}</div>`;
-
-      html += `<div class="tooltip-block"><div class="tooltip-block-title">Erststimme</div>`;
-      Object.entries(currentErst)
-        .sort((a, b) => b[1] - a[1])
-        .forEach(([party, val]) => {
-          html += `<div class="tooltip-row"><span>${party}</span><strong>${val.toFixed(2)}%</strong></div>`;
-        });
-      html += `</div>`;
-
-      html += `<div class="tooltip-block"><div class="tooltip-block-title">Zweitstimme</div>`;
-      Object.entries(currentZweit)
-        .sort((a, b) => b[1] - a[1])
-        .forEach(([party, val]) => {
-          html += `<div class="tooltip-row"><span>${party}</span><strong>${val.toFixed(2)}%</strong></div>`;
-        });
-      html += `</div>`;
-
-      tooltip.innerHTML = html;
-      tooltip.style.left = e.pageX + 16 + "px";
-      tooltip.style.top = e.pageY + 16 + "px";
-      tooltip.style.display = "block";
+      renderTooltip(current, wkNr, e.pageX, e.pageY);
     };
 
     path.onmouseleave = () => {
       tooltip.style.display = "none";
     };
   });
+}
+
+function renderTooltip(current, wkNr, pageX, pageY) {
+  const tooltip = document.getElementById("tooltip");
+  const erst = current.erst || {};
+  const zweit = current.zweit || {};
+
+  const erstWinner = getWinner(erst);
+  const zweitWinner = getWinner(zweit);
+
+  let html = `
+    <div class="tooltip-title">${current.name || `Wahlkreis ${wkNr}`}</div>
+  `;
+
+  html += buildTooltipBlock("Erststimme", erst, erstWinner);
+  html += buildTooltipBlock("Zweitstimme", zweit, zweitWinner);
+
+  tooltip.innerHTML = html;
+  tooltip.style.left = pageX + 16 + "px";
+  tooltip.style.top = pageY + 16 + "px";
+  tooltip.style.display = "block";
+}
+
+function buildTooltipBlock(title, values, winner) {
+  let html = `<div class="tooltip-block"><div class="tooltip-block-title">${title}</div>`;
+
+  Object.entries(values)
+    .sort((a, b) => b[1] - a[1])
+    .forEach(([party, val]) => {
+      const color = colorMap[party] || "#777";
+      const bg = hexToRgba(color, 0.18);
+      const border = hexToRgba(color, 0.45);
+      const logo = logoMap[party];
+
+      html += `
+        <div class="tooltip-row" style="
+          align-items:center;
+          margin-bottom:6px;
+          padding:6px 8px;
+          border-radius:10px;
+          background:${bg};
+          border:1px solid ${border};
+        ">
+          <div style="display:flex;align-items:center;gap:8px;min-width:0;">
+            ${logo ? `<img src="${logo}" alt="${party}" style="width:16px;height:16px;object-fit:contain;border-radius:3px;">` : ""}
+            <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${party}${party === winner ? " ★" : ""}</span>
+          </div>
+          <strong>${val.toFixed(2)}%</strong>
+        </div>
+      `;
+    });
+
+  html += `</div>`;
+  return html;
+}
+
+function hexToRgba(hex, alpha) {
+  const clean = hex.replace("#", "");
+  const bigint = parseInt(clean, 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
 function calculateSeatsFromSimulation(sim) {
@@ -296,12 +350,35 @@ function calculateSeatsFromSimulation(sim) {
     validParties[party] = validParties[party] / totalPercent;
   });
 
-  const seats = {};
-  Object.keys(validParties).forEach(party => {
-    seats[party] = Math.round(validParties[party] * TOTAL_SEATS);
-  });
+  // Sainte-Laguë/Schepers-ähnliche Verteilung statt stumpf Math.round
+  const seats = allocateSeatsSaintLague(validParties, TOTAL_SEATS);
 
   return { seats, directMandates, zweitNational };
+}
+
+function allocateSeatsSaintLague(voteShares, totalSeats) {
+  const seatCounts = {};
+  Object.keys(voteShares).forEach(p => seatCounts[p] = 0);
+
+  const quotients = [];
+
+  Object.keys(voteShares).forEach(party => {
+    for (let d = 0; d < totalSeats * 2; d++) {
+      const divisor = 0.5 + d;
+      quotients.push({
+        party,
+        value: voteShares[party] / divisor
+      });
+    }
+  });
+
+  quotients.sort((a, b) => b.value - a.value);
+
+  for (let i = 0; i < totalSeats; i++) {
+    seatCounts[quotients[i].party]++;
+  }
+
+  return seatCounts;
 }
 
 function applyCustomInput() {
@@ -335,10 +412,18 @@ function displaySeatResult(seats, zweitNational, directMandates) {
     .sort((a, b) => b[1] - a[1])
     .forEach(([party, count]) => {
       const direct = directMandates?.[party] || 0;
-      html += `<div class="seat-line" style="color:${colorMap[party] || "#999"};">
-        <span>${party}</span>
-        <span>${count} <span style="color:#9aa4b2;font-weight:400;">(${direct} Direkt)</span></span>
-      </div>`;
+      const color = colorMap[party] || "#999";
+      const logo = logoMap[party];
+
+      html += `
+        <div class="seat-line" style="color:${color};align-items:center;">
+          <span style="display:flex;align-items:center;gap:8px;">
+            ${logo ? `<img src="${logo}" alt="${party}" style="width:16px;height:16px;object-fit:contain;border-radius:3px;">` : ""}
+            ${party}
+          </span>
+          <span>${count} <span style="color:#9aa4b2;font-weight:400;">(${direct} Direkt)</span></span>
+        </div>
+      `;
     });
 
   seatResult.innerHTML = html;
@@ -413,9 +498,22 @@ function buildCoalitions(seats) {
   }
 
   combos.forEach(entry => {
-    container.innerHTML += `<div style="padding:6px 0;">
-      ${entry.combo.join(" + ")} → <strong>${entry.total}</strong>
-    </div>`;
+    const logos = entry.combo.map(party => {
+      const src = logoMap[party];
+      return src
+        ? `<img src="${src}" alt="${party}" style="width:16px;height:16px;object-fit:contain;border-radius:3px;">`
+        : "";
+    }).join(" ");
+
+    container.innerHTML += `
+      <div style="padding:6px 0;display:flex;justify-content:space-between;gap:12px;align-items:center;">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+          ${logos}
+          <span>${entry.combo.join(" + ")}</span>
+        </div>
+        <strong>${entry.total}</strong>
+      </div>
+    `;
   });
 }
 
@@ -440,6 +538,7 @@ function resetInputs() {
   document.getElementById("ruralBoostParty").value = "Union";
   document.getElementById("ruralBoostValue").value = "1.5";
 
+  simulatedData = null;
   colorMapByErststimme();
   displaySeatResult({}, {}, {});
   drawParliament({});
