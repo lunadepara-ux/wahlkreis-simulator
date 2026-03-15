@@ -46,15 +46,26 @@ const DEFAULTS_2025 = {
   "SSW": 0.2
 };
 
-const coalitionLabels = {
-  "SPD + Union": "GroKo",
-  "Union + AfD": "Schwarz-Blau",
-  "SPD + GRÜNE + Die Linke": "Rot-Rot-Grün",
-  "SPD + FDP + GRÜNE": "Ampel",
-  "Union + FDP + GRÜNE": "Jamaika",
-  "Union + SPD + GRÜNE": "Kenya",
-  "Union + SPD + FDP": "Deutschland"
+const DEFAULT_FIELDS = {
+  eastBoostParty: "AfD",
+  eastBoostValue: "2.0",
+  westBoostParty: "Union",
+  westBoostValue: "1.0",
+  urbanBoostParty: "GRÜNE",
+  urbanBoostValue: "2.0",
+  ruralBoostParty: "Union",
+  ruralBoostValue: "1.5"
 };
+
+const coalitionPresets = [
+  { name: "GroKo", parties: ["SPD", "Union"] },
+  { name: "Kenya", parties: ["Union", "SPD", "GRÜNE"] },
+  { name: "Schwarz-Blau", parties: ["Union", "AfD"] },
+  { name: "Rot-Rot-Grün", parties: ["SPD", "Die Linke", "GRÜNE"] },
+  { name: "Ampel", parties: ["SPD", "FDP", "GRÜNE"] },
+  { name: "Jamaika", parties: ["Union", "FDP", "GRÜNE"] },
+  { name: "Deutschland", parties: ["Union", "SPD", "FDP"] }
+];
 
 const translations = {
   de: {
@@ -86,7 +97,7 @@ const translations = {
     parliamentTitle: "Bundestag",
     parliamentSubtitle: "Halbkreis-Visualisierung der Sitze.",
     coalitionTitle: "Koalitionsrechner",
-    coalitionSubtitle: "Automatische Mehrheitsoptionen ab 316 Sitzen.",
+    coalitionSubtitle: "Vordefinierte Koalitionen ab 316 Sitzen.",
     firstVote: "Erststimme",
     secondVote: "Zweitstimme",
     simulatedSecondVote: "Zweitstimme (simuliert)",
@@ -115,7 +126,7 @@ const translations = {
     inputNote: "Map = first vote. Seats = second vote. Basic mandate clause active. Union is treated as one bloc.",
     legendTitle: "Legend",
     mainTitle: "German federal election 2025",
-    mainSubtitle: "Constituency map, seat projection and automatic coalition suggestions.",
+    mainSubtitle: "Constituency map, seat projection and predefined coalition options.",
     mapTitle: "Constituency map",
     mapSubtitle: "Coloring by first vote. Hover shows first and second vote.",
     seatsTitle: "Seat distribution",
@@ -123,7 +134,7 @@ const translations = {
     parliamentTitle: "Parliament",
     parliamentSubtitle: "Semicircle seat visualization.",
     coalitionTitle: "Coalition calculator",
-    coalitionSubtitle: "Automatic majority options from 316 seats.",
+    coalitionSubtitle: "Predefined coalitions from 316 seats.",
     firstVote: "First vote",
     secondVote: "Second vote",
     simulatedSecondVote: "Second vote (simulated)",
@@ -152,7 +163,7 @@ const translations = {
     inputNote: "Mapa = pierwszy głos. Mandaty = drugi głos. Klauzula mandatów podstawowych aktywna. Union liczona jako jeden blok.",
     legendTitle: "Legenda",
     mainTitle: "Wybory do Bundestagu 2025",
-    mainSubtitle: "Mapa okręgów, projekcja mandatów i automatyczne propozycje koalicji.",
+    mainSubtitle: "Mapa okręgów, projekcja mandatów i predefiniowane koalicje.",
     mapTitle: "Mapa okręgów",
     mapSubtitle: "Kolory według pierwszego głosu. Po najechaniu widać pierwszy i drugi głos.",
     seatsTitle: "Podział mandatów",
@@ -160,7 +171,7 @@ const translations = {
     parliamentTitle: "Bundestag",
     parliamentSubtitle: "Półokrągła wizualizacja mandatów.",
     coalitionTitle: "Kalkulator koalicji",
-    coalitionSubtitle: "Automatyczne większości od 316 mandatów.",
+    coalitionSubtitle: "Predefiniowane koalicje od 316 mandatów.",
     firstVote: "Pierwszy głos",
     secondVote: "Drugi głos",
     simulatedSecondVote: "Drugi głos (symulacja)",
@@ -189,7 +200,7 @@ const translations = {
     inputNote: "Carte = premier vote. Sièges = second vote. Clause des mandats de base active. L’Union est traitée comme un seul bloc.",
     legendTitle: "Légende",
     mainTitle: "Élections fédérales 2025",
-    mainSubtitle: "Carte des circonscriptions, projection des sièges et coalitions automatiques.",
+    mainSubtitle: "Carte des circonscriptions, projection des sièges et coalitions prédéfinies.",
     mapTitle: "Carte des circonscriptions",
     mapSubtitle: "Couleurs selon le premier vote. Au survol, premier et second vote.",
     seatsTitle: "Répartition des sièges",
@@ -197,7 +208,7 @@ const translations = {
     parliamentTitle: "Bundestag",
     parliamentSubtitle: "Visualisation en demi-cercle des sièges.",
     coalitionTitle: "Calculateur de coalition",
-    coalitionSubtitle: "Options de majorité automatiques à partir de 316 sièges.",
+    coalitionSubtitle: "Coalitions prédéfinies à partir de 316 sièges.",
     firstVote: "Premier vote",
     secondVote: "Second vote",
     simulatedSecondVote: "Second vote (simulé)",
@@ -226,7 +237,7 @@ const translations = {
     inputNote: "Mapa = primer voto. Escaños = segundo voto. Cláusula de mandatos básicos activa. La Unión se trata como un solo bloque.",
     legendTitle: "Leyenda",
     mainTitle: "Elección federal 2025",
-    mainSubtitle: "Mapa de distritos, proyección de escaños y coaliciones automáticas.",
+    mainSubtitle: "Mapa de distritos, proyección de escaños y coaliciones predefinidas.",
     mapTitle: "Mapa de distritos",
     mapSubtitle: "Colores según el primer voto. Al pasar el ratón se ve primer y segundo voto.",
     seatsTitle: "Reparto de escaños",
@@ -234,7 +245,7 @@ const translations = {
     parliamentTitle: "Bundestag",
     parliamentSubtitle: "Visualización semicircular de los escaños.",
     coalitionTitle: "Calculadora de coaliciones",
-    coalitionSubtitle: "Opciones automáticas de mayoría a partir de 316 escaños.",
+    coalitionSubtitle: "Coaliciones predefinidas a partir de 316 escaños.",
     firstVote: "Primer voto",
     secondVote: "Segundo voto",
     simulatedSecondVote: "Segundo voto (simulado)",
@@ -245,17 +256,6 @@ const translations = {
 };
 
 let currentLang = "de";
-
-const DEFAULT_FIELDS = {
-  eastBoostParty: "AfD",
-  eastBoostValue: "2.0",
-  westBoostParty: "Union",
-  westBoostValue: "1.0",
-  urbanBoostParty: "GRÜNE",
-  urbanBoostValue: "2.0",
-  ruralBoostParty: "Union",
-  ruralBoostValue: "1.5"
-};
 
 async function loadMap() {
   const svg = await fetch("assets/btw25_wahlkreise_svg.svg").then(r => r.text());
@@ -291,6 +291,7 @@ function t(key) {
 
 function applyLanguage(lang) {
   currentLang = lang;
+
   setText("appSubtitle", t("appSubtitle"));
   setText("metaTitle", t("metaTitle"));
   setText("languageLabel", t("languageLabel"));
@@ -727,62 +728,41 @@ function buildCoalitions(seats) {
   if (!container) return;
 
   container.innerHTML = "";
-  const parties = Object.keys(seats || {});
-  const combos = [];
 
-  function sum(combo) {
-    return combo.reduce((s, p) => s + seats[p], 0);
-  }
+  let anyMajority = false;
 
-  for (let i = 0; i < parties.length; i++) {
-    for (let j = i + 1; j < parties.length; j++) {
-      const combo = [parties[i], parties[j]];
-      const total = sum(combo);
-      if (total >= MAJORITY) combos.push({ combo, total });
-    }
-  }
+  coalitionPresets.forEach(preset => {
+    const valid = preset.parties.every(p => seats[p] !== undefined);
+    const total = preset.parties.reduce((sum, p) => sum + (seats[p] || 0), 0);
 
-  for (let i = 0; i < parties.length; i++) {
-    for (let j = i + 1; j < parties.length; j++) {
-      for (let k = j + 1; k < parties.length; k++) {
-        const combo = [parties[i], parties[j], parties[k]];
-        const total = sum(combo);
-        if (total >= MAJORITY) combos.push({ combo, total });
-      }
-    }
-  }
+    if (valid && total >= MAJORITY) {
+      anyMajority = true;
 
-  combos.sort((a, b) => a.total - b.total);
+      const logos = preset.parties.map(party => {
+        const src = logoMap[party];
+        return src
+          ? `<img src="${src}" alt="${party}" style="width:16px;height:16px;object-fit:contain;border-radius:3px;">`
+          : "";
+      }).join(" ");
 
-  if (!combos.length) {
-    container.innerHTML = `<div>${t("noMajority")}</div>`;
-    return;
-  }
-
-  combos.forEach(entry => {
-    const comboKey = [...entry.combo].sort().join(" + ");
-    const label = coalitionLabels[comboKey];
-
-    const logos = entry.combo.map(party => {
-      const src = logoMap[party];
-      return src
-        ? `<img src="${src}" alt="${party}" style="width:16px;height:16px;object-fit:contain;border-radius:3px;">`
-        : "";
-    }).join(" ");
-
-    container.innerHTML += `
-      <div style="padding:8px 0;display:flex;justify-content:space-between;gap:12px;align-items:center;border-bottom:1px solid rgba(255,255,255,0.06);">
-        <div style="display:flex;flex-direction:column;gap:4px;">
-          ${label ? `<strong style="color:#fff;">${label}</strong>` : ""}
-          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-            ${logos}
-            <span>${entry.combo.join(" + ")}</span>
+      container.innerHTML += `
+        <div class="coalition-row">
+          <div class="coalition-left">
+            <div class="coalition-badge">${preset.name}</div>
+            <div class="coalition-logos">
+              ${logos}
+              <span>${preset.parties.join(" + ")}</span>
+            </div>
           </div>
+          <div class="coalition-seat">${total}</div>
         </div>
-        <strong>${entry.total}</strong>
-      </div>
-    `;
+      `;
+    }
   });
+
+  if (!anyMajority) {
+    container.innerHTML = `<div>${t("noMajority")}</div>`;
+  }
 }
 
 function resetInputs() {
