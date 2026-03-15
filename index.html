@@ -107,13 +107,12 @@
     font-size: 14px;
   }
 
-  .party-logo {
-    width: 18px;
-    height: 18px;
-    border-radius: 999px;
-    display: inline-block;
-    flex: 0 0 18px;
-    border: 1px solid rgba(255,255,255,0.08);
+  .party-logo-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex: 0 0 20px;
+    border-radius: 4px;
   }
 
   .party-grid input,
@@ -399,34 +398,34 @@
       <div class="section-sub">Zweitstimmen-Prognose für die Sitzverteilung und regionale Simulation.</div>
 
       <div id="inputContainer" class="party-grid">
-        <label class="party-label" for="UNION_input"><span class="party-logo" style="background:var(--union)"></span>Union</label>
+        <label class="party-label" for="UNION_input"><img class="party-logo-img" src="assets/logos/Union.png" alt="Union">Union</label>
         <input type="number" id="UNION_input" step="0.1" value="28.5">
 
-        <label class="party-label" for="AfD_input"><span class="party-logo" style="background:var(--afd)"></span>AfD</label>
+        <label class="party-label" for="AfD_input"><img class="party-logo-img" src="assets/logos/AfD.png" alt="AfD">AfD</label>
         <input type="number" id="AfD_input" step="0.1" value="20.8">
 
-        <label class="party-label" for="SPD_input"><span class="party-logo" style="background:var(--spd)"></span>SPD</label>
+        <label class="party-label" for="SPD_input"><img class="party-logo-img" src="assets/logos/SPD.png" alt="SPD">SPD</label>
         <input type="number" id="SPD_input" step="0.1" value="16.4">
 
-        <label class="party-label" for="GRUENE_input"><span class="party-logo" style="background:var(--gruene)"></span>GRÜNE</label>
+        <label class="party-label" for="GRUENE_input"><img class="party-logo-img" src="assets/logos/Gruene.png" alt="Grüne">GRÜNE</label>
         <input type="number" id="GRUENE_input" step="0.1" value="13.9">
 
-        <label class="party-label" for="LINKE_input"><span class="party-logo" style="background:var(--linke)"></span>Die Linke</label>
+        <label class="party-label" for="LINKE_input"><img class="party-logo-img" src="assets/logos/Linke.png" alt="Die Linke">Die Linke</label>
         <input type="number" id="LINKE_input" step="0.1" value="8.6">
 
-        <label class="party-label" for="FDP_input"><span class="party-logo" style="background:var(--fdp)"></span>FDP</label>
+        <label class="party-label" for="FDP_input"><img class="party-logo-img" src="assets/logos/FDP.png" alt="FDP">FDP</label>
         <input type="number" id="FDP_input" step="0.1" value="4.3">
 
-        <label class="party-label" for="BSW_input"><span class="party-logo" style="background:var(--bsw)"></span>BSW</label>
+        <label class="party-label" for="BSW_input"><img class="party-logo-img" src="assets/logos/BSW.png" alt="BSW">BSW</label>
         <input type="number" id="BSW_input" step="0.1" value="5.0">
 
-        <label class="party-label" for="FW_input"><span class="party-logo" style="background:var(--fw)"></span>FW</label>
+        <label class="party-label" for="FW_input"><img class="party-logo-img" src="assets/logos/fw.png" alt="FW">FW</label>
         <input type="number" id="FW_input" step="0.1" value="1.5">
 
-        <label class="party-label" for="Volt_input"><span class="party-logo" style="background:var(--volt)"></span>Volt</label>
+        <label class="party-label" for="Volt_input"><img class="party-logo-img" src="assets/logos/Volt.png" alt="Volt">Volt</label>
         <input type="number" id="Volt_input" step="0.1" value="1.2">
 
-        <label class="party-label" for="SSW_input"><span class="party-logo" style="background:var(--ssw)"></span>SSW</label>
+        <label class="party-label" for="SSW_input"><img class="party-logo-img" src="assets/logos/ssw.png" alt="SSW">SSW</label>
         <input type="number" id="SSW_input" step="0.1" value="0.2">
       </div>
 
